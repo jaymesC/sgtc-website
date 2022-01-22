@@ -8,7 +8,7 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1 style={{marginTop: "3000px"}}>Home component</h1>
+    <h1 style={{marginTop: "50px"}}>Home component</h1>
   </Layout>
 )
 

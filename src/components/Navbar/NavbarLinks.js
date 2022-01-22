@@ -1,6 +1,21 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import { FaFacebookF } from "react-icons/fa"
+import { FaInstagram } from "react-icons/fa"
+import { FaTwitter } from "react-icons/fa"
+import { FaYoutube } from "react-icons/fa"
+
+const NavIcon = styled(Link)`
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  display: none;
+  @media (max-width: 768px) {
+   display: block;
+  }
+`
 
 const NavItem = styled(Link)`
   text-decoration: none;
@@ -42,6 +57,13 @@ const NavbarLinks = () => {
       <NavItem to="/404">About us</NavItem>
       <NavItem to="/">Blog</NavItem>
       <NavItem to="/404">Contact</NavItem>
+
+      <NavIcon>
+        <FaFacebookF style={{ marginRight: "20px" }} />
+        <FaInstagram style={{ marginRight: "20px" }} />
+        <FaTwitter style={{ marginRight: "20px" }} />
+        <FaYoutube />
+      </NavIcon>
     </>
   )
 }

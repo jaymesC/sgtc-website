@@ -42,7 +42,8 @@ const Toggle = styled.div`
 `
 
 const Img = styled(motion.section)`
-  padding-top: 5px;
+  padding-top:2px;
+  padding-bottom: 2px;
   /* margin-left: 6rem; */
   @media (max-width: 768px) {
     margin-left: 0;
