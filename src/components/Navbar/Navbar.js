@@ -9,13 +9,14 @@ import { motion } from "framer-motion"
 const Navigation = styled.nav`
   height: 9vh;
   display: flex;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #af3277;
   position: sticky;
   top: 0;
   justify-content: space-between;
   text-transform: uppercase;
   border-bottom: 2px solid #33333320;
+  box-shadow: -2px -1px 11px -3px #000000;
   margin: 0 auto;
   padding: 0 5vw;
   z-index: 99;
@@ -41,7 +42,7 @@ const Toggle = styled.div`
 `
 
 const Img = styled(motion.section)`
-  padding-top: 13px;
+  padding-top: 5px;
   /* margin-left: 6rem; */
   @media (max-width: 768px) {
     margin-left: 0;
@@ -62,9 +63,9 @@ const Navbox = styled.div`
     position: fixed;
     width: 100%;
     justify-content: flex-start;
-    padding-top: 10vh;
-    background-color: #000;
-    color: #fff;
+    padding-top: 5vh;
+    background-color: #fff;
+    color: #af3277;
     transition: all 0.4s ease-in;
     top: 8vh;
     right: ${props => (props.open ? "-100%" : "0")};
@@ -72,7 +73,7 @@ const Navbox = styled.div`
 `
 
 const Hamburger = styled.div`
-  background-color: #fff;
+  background-color: #af3277;
   width: 30px;
   color: #fff;
   height: 3px;
@@ -84,7 +85,7 @@ const Hamburger = styled.div`
   ::after {
     width: 30px;
     height: 3px;
-    background-color: #fff;
+    background-color: #af3277;
     content: "";
     position: absolute;
     transition: all 0.3s linear;
