@@ -54,9 +54,9 @@ const NavbarLinks = () => {
   return (
     <>
       <NavItem to="/">Home</NavItem>
-      <NavItem to="/404">About us</NavItem>
-      <NavItem to="/">Blog</NavItem>
-      <NavItem to="/404">Contact</NavItem>
+      <NavItem to="/about">About us</NavItem>
+      <NavItem to="/blog">Blog</NavItem>
+      <NavItem to="/contact">Contact</NavItem>
 
       <NavIcon>
         <FaFacebookF style={{ marginRight: "20px" }} />
