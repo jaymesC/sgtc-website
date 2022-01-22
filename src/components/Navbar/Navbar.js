@@ -7,17 +7,18 @@ import { motion } from "framer-motion"
 // import Logo from "./Logo"
 
 const Navigation = styled.nav`
-  height: 10vh;
+  height: 9vh;
   display: flex;
   background-color: #000;
   color: #fff;
-  position: relative;
+  position: sticky;
+  top: 0;
   justify-content: space-between;
   text-transform: uppercase;
   border-bottom: 2px solid #33333320;
   margin: 0 auto;
   padding: 0 5vw;
-  z-index: 2;
+  z-index: 99;
   align-self: center;
   @media (max-width: 768px) {
     position: sticky;
@@ -41,7 +42,7 @@ const Toggle = styled.div`
 
 const Img = styled(motion.section)`
   padding-top: 13px;
-  margin-left: 6.3rem;
+  /* margin-left: 6rem; */
   @media (max-width: 768px) {
     margin-left: 0;
     padding-top: 18px;
@@ -62,16 +63,18 @@ const Navbox = styled.div`
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
-    background-color: #fff;
-    transition: all 0.3s ease-in;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.4s ease-in;
     top: 8vh;
-    left: ${props => (props.open ? "-100%" : "0")};
+    right: ${props => (props.open ? "-100%" : "0")};
   }
 `
 
 const Hamburger = styled.div`
-  background-color: #111;
+  background-color: #fff;
   width: 30px;
+  color: #fff;
   height: 3px;
   transition: all 0.3s linear;
   align-self: center;
@@ -81,7 +84,7 @@ const Hamburger = styled.div`
   ::after {
     width: 30px;
     height: 3px;
-    background-color: #111;
+    background-color: #fff;
     content: "";
     position: absolute;
     transition: all 0.3s linear;
