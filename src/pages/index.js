@@ -8,6 +8,7 @@ import Carousel from "nuka-carousel"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Gallery from "../components/Gallery"
+import Service from "../components/Service"
 
 const StyledAboutSection = styled.section`
   display: flex;
@@ -179,6 +180,7 @@ const IndexPage = () => (
         </StyledAboutSection>
         <Gallery />
       </StyledDiv>
+      <Service />
     </Layout>
   </>
 )

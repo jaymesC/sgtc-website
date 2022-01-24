@@ -16,7 +16,7 @@ const Navigation = styled.nav`
   justify-content: space-between;
   text-transform: uppercase;
   border-bottom: 2px solid #33333320;
-  box-shadow: 0 10px 20px -7px rgb(160 44 219 / 7%);
+  box-shadow: -2px -1px 11px -3px #000000;
   margin: 0 auto;
   padding: 0 5vw;
   z-index: 99;

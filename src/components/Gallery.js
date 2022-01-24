@@ -25,10 +25,12 @@ const StyledH5 = styled.h5`
 
 const StyledDiv = styled.div`
 margin-top: 5rem;
+margin-bottom:2rem;
 display: flex;
 flex-direction: column;
-  @media screen and (max-width: 568px) {
-flex-direction: column;
+@media screen and (max-width: 568px) {
+  flex-direction: column;
+  margin-bottom:1rem;
 }
 `
 const StyledSection = styled.section`
