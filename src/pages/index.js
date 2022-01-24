@@ -24,7 +24,6 @@ const StyledDiv = styled.div`
   @media (max-width: 768px) {
     margin-left: 1rem;
     margin-right: 1rem;
-
   }
   @media screen and (max-width: 568px) {
     margin-top: 1.5rem;
@@ -61,13 +60,11 @@ const StyledImg = styled.img`
   margin-left: 3rem;
 
   @media (max-width: 768px) {
-
   }
   @media screen and (max-width: 568px) {
     margin-left: 0;
     height: 10rem;
     /* width:10rem; */
-
   }
 `
 
@@ -77,7 +74,7 @@ const StyledH5 = styled.h5`
   margin-bottom: 2.5rem;
 
   @media screen and (max-width: 568px) {
-   margin-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 `
 const StyledH1 = styled.h1`
@@ -85,12 +82,11 @@ const StyledH1 = styled.h1`
   color: #000;
   font-size: 3rem;
   @media (max-width: 768px) {
-    font-size:2rem;
+    font-size: 2rem;
     line-height: normal;
-
   }
   @media screen and (max-width: 568px) {
-    font-size:1rem;
+    font-size: 1rem;
     line-height: normal;
   }
 `
@@ -102,7 +98,7 @@ const StyledP = styled.p`
   @media screen and (max-width: 568px) {
     font-size: 1rem;
     margin-top: 1rem;
-margin-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 `
 
@@ -147,7 +143,7 @@ const IndexPage = () => (
       <StyledDiv>
         <StyledAboutSection>
           <StyledBox>
-          <Underline />
+            <Underline />
             <StyledParagraph>
               <StyledH5>WHY OUR CHURCH</StyledH5>
               <StyledH1>
@@ -168,24 +164,25 @@ const IndexPage = () => (
               </StyledButton>
             </StyledParagraph>
           </StyledBox>
-            <StyledImg
-              layout="constrained"
-              src="/test.PNG"
-              // width={300}
-              // height={260}
-              quality={95}
-              formats={["AUTO", "WEBP", "AVIF"]}
-              alt="A Gatsby astronaut"
-            />
+          <StyledImg
+            layout="constrained"
+            src="/test.PNG"
+            // width={300}
+            // height={260}
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+            alt="A Gatsby astronaut"
+          />
         </StyledAboutSection>
         <Gallery />
       </StyledDiv>
+
       <Service />
     </Layout>
   </>
 )
 
-export default IndexPage;
+export default IndexPage
 
 // <StaticImage
 //   layout="constrained"
