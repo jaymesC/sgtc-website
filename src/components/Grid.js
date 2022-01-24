@@ -42,17 +42,11 @@ const photos = [
 
 
 const StyledGrid = styled.section`
-  display: flex;
-  border: 2px solid #2a3035;
-  font-family: Tahoma;
-  transition: all 0.4s ease;
-  /* justify-content: center; */
-  @media screen and (max-width: 568px) {
-      flex-direction: column;
-      transition: all 0.4s ease;
-      :hover {
-        border: 4px 3px 14px 0px #5d5c58;
-    }
+
+  transition: all 0.5s ease;
+  :hover {
+    transition: all 0.5s ease;
+    box-shadow: -2px 4px 11px -3px #000000;
   }
 `
 
@@ -96,8 +90,11 @@ const StyledH1 = styled.h1`
 `
 
 const Grid = () => {
-  return (
+    return (
+      <StyledGrid>
+            
 <Gallery photos={photos} />
+      </StyledGrid>
           
   )
 }

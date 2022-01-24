@@ -113,6 +113,7 @@ const StyledButton = styled.button`
   cursor: pointer;
   border-radius: 5px;
   border: #af3277;
+  box-shadow: 0 12px 12px -11px #af3277;
   :hover {
   }
   @media screen and (max-width: 568px) {
