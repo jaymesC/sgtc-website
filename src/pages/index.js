@@ -7,6 +7,7 @@ import { navigate } from "gatsby"
 import Carousel from "nuka-carousel"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Events from "../components/Events"
 
 const StyledAboutSection = styled.section`
   display: flex;
@@ -129,6 +130,7 @@ const IndexPage = () => (
             />
           </StyledBox>
         </StyledAboutSection>
+        <Events />
       </StyledDiv>
     </Layout>
   </>
