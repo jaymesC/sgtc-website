@@ -22,7 +22,6 @@ const Navigation = styled.nav`
   z-index: 99;
   align-self: center;
   @media (max-width: 768px) {
-    position: sticky;
     height: 8vh;
     top: 0;
     left: 0;
@@ -47,7 +46,7 @@ const Img = styled(motion.section)`
   /* margin-left: 6rem; */
   @media (max-width: 768px) {
     margin-left: 0;
-    padding-top: 18px;
+    padding-top: 8px;
     padding-left: 10px;
     margin-right: 0rem;
     width: 50px;
