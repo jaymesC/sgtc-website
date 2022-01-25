@@ -11,7 +11,7 @@ const StyledArea = styled.div`
   display: flex;
   /* width: 100vw; */
   @media (max-width: 768px) {
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-right: 0;
   }
   @media screen and (max-width: 568px) {
@@ -46,7 +46,6 @@ const StyledDate = styled.section`
   width: 100vw;
 
   @media (max-width: 768px) {
-    /* width: 400px; */
   }
   @media screen and (max-width: 568px) {
     width: 98vw;
@@ -66,6 +65,8 @@ const StyledH3 = styled.h3`
   padding-bottom: 2rem;
 
   @media (max-width: 768px) {
+    width: 8rem;
+    padding-left: 2rem;
     padding-right: 2rem;
   }
   @media screen and (max-width: 568px) {
@@ -100,7 +101,6 @@ const StyledBox = styled.section`
   margin-top: 1rem;
   margin-bottom: 1rem;
   flex: 0.6;
-  /* padding-left: 5rem; */
   padding-right: 1rem;
   border-left: 1px solid white;
   display: flex;
@@ -108,7 +108,7 @@ const StyledBox = styled.section`
   align-items: center;
   width: fit-content;
   @media (max-width: 768px) {
-    /* width: 400px; */
+    padding-left: 1rem;
   }
   @media screen and (max-width: 568px) {
     padding-left: 2rem;

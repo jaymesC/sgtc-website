@@ -48,6 +48,9 @@ const StyledHeading = styled.section`
   margin-left: 10rem;
   margin-right: 10rem;
   @media (max-width: 768px) {
+      margin-left: 1.2rem;
+      margin-right: 0;
+
   }
   @media screen and (max-width: 568px) {
     margin-left: 1rem;
