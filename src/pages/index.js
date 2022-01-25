@@ -104,11 +104,11 @@ const StyledH1 = styled.h1`
 const StyledP = styled.p`
   margin-top: 2.5rem;
   margin-bottom: 2rem;
-  color: #000;
+  color: #777;
   font-size: 1.2rem;
   @media (max-width: 768px) {
     margin-top: 0.5rem;
-    }
+  }
   @media screen and (max-width: 568px) {
     font-size: 1rem;
     margin-top: 1rem;
@@ -181,11 +181,9 @@ const IndexPage = () => (
           <StyledImg
             layout="constrained"
             src="/test.PNG"
-            // width={300}
-            // height={260}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
-            alt="A Gatsby astronaut"
+            alt="About image"
           />
         </StyledAboutSection>
         <Gallery />

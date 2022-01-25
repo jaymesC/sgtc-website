@@ -1,12 +1,19 @@
 import React from 'react';
 import styled from "styled-components"
+import BlogCard from './BlogCard';
+
 
 
 const StyledSection = styled.div`
-margin-top: 5rem;
-margin-left: 10rem;
-margin-right: 10rem;
-
+  margin-top: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  @media (max-width: 768px) {
+    margin-left: 1rem;
+  }
+  @media screen and (max-width: 568px) {
+    margin-left: 0;
+  }
 `
 
 const Underline = styled.div`
@@ -55,7 +62,7 @@ const BlogSection = () => {
           <StyledH5>FROM THE BLOG</StyledH5>
             </StyledHeading>
             <StyledBlogSection>
-
+                <BlogCard />
             </StyledBlogSection>
       </StyledSection>
     )

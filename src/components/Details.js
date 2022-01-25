@@ -44,12 +44,15 @@ const StyledDate = styled.section`
   border: 1px solid white;
   margin-left: 0.3rem;
   width: 100vw;
+  margin-left: 3rem;
 
   @media (max-width: 768px) {
+      margin-left: 1rem;
   }
   @media screen and (max-width: 568px) {
     width: 98vw;
     flex-direction: column;
+    margin-left: 0;
     /* margin-right: 12rem; */
   }
 `
