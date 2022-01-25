@@ -5,40 +5,80 @@ import { FaMapMarkerAlt } from "react-icons/fa"
 
 
 const StyledArea = styled.div`
-margin-bottom:1rem;
+  margin-bottom: 1rem;
   margin-left: 10rem;
   margin-right: 10rem;
   display: flex;
-  /* width: 10; */
-  /* justify-content: space-between; */
-`
-
-const StyledSquare = styled.div`
-  height: 100px;
-  width: 100px;
-  background-color: #af3277;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
+  /* width: 100vw; */
   @media (max-width: 768px) {
     /* width: 400px; */
   }
+  @media screen and (max-width: 568px) {
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+  }
 `
+
+// const StyledSquare = styled.div`
+//   height: 100px;
+//   width: 100px;
+//   background-color: #af3277;
+//   text-align: center;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-size: 3rem;
+//   @media (max-width: 768px) {
+//   }
+//   @media screen and (max-width: 568px) {
+//     font-size: 1.5rem;
+//     height: auto;
+//     width: auto;
+//   }
+// `
 const StyledDate = styled.section`
   display: flex;
   justify-content: space-between;
   border: 1px solid white;
   margin-left: 0.3rem;
+  width: 100vw;
+
+  @media (max-width: 768px) {
+    /* width: 400px; */
+  }
+  @media screen and (max-width: 568px) {
+    width: 98vw;
+    flex-direction: column;
+    /* margin-right: 12rem; */
+  }
 `
 
 const StyledH3 = styled.h3`
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding-right: 2rem;
-  padding-left: 1rem;
+  flex: 0.3;
+  background-color: #af3277;
+  /* width: 80%; */
+  /* 
+  align-items: center; */
+  /* padding-right: 2rem; */
+  /* margin-right: 0.2rem; */
+  /* align-items: center; */
+  align-self: center;
+  /* margin-left: 2rem; */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  /* text-align: center; */
+  @media (max-width: 768px) {
+    /* width: 400px; */
+  }
+  @media screen and (max-width: 568px) {
+    font-size: 12px;
+    width: 100%;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
 `
 
 const StyledLocale = styled.div`
@@ -50,29 +90,55 @@ const StyledLocale = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @media (max-width: 768px) {
+    /* width: 400px; */
+  }
+  @media screen and (max-width: 568px) {
+    justify-content: center;
+    padding-left: 2rem;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
 `
 
 const StyledBox = styled.section`
   margin-top: 1rem;
   margin-bottom: 1rem;
-  padding-left: 1rem;
+  flex: 0.6;
+  /* padding-left: 5rem; */
   padding-right: 1rem;
   border-left: 1px solid white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  width: fit-content;
+  @media (max-width: 768px) {
+    /* width: 400px; */
+  }
+  @media screen and (max-width: 568px) {
+    padding-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
 `
 
 const StyledP = styled.p`
-  margin-left: 0.5rem;
+
+
+  margin-left: 1rem;
+  @media (max-width: 768px) {
+    /* width: 400px; */
+  }
+  @media screen and (max-width: 568px) {
+      font-size: 12px;
+  }
 `
 
 const Details = ({ day, title, time, location }) => {
   return (
     <StyledArea>
-      <StyledSquare>{day}</StyledSquare>
+      {/* <StyledSquare>{day}</StyledSquare> */}
       <StyledDate>
-        <StyledH3>{title}</StyledH3>
+        <StyledH3>{day.toUpperCase()}</StyledH3>
         <StyledBox>
           <FaClock />
           <StyledP>{time}</StyledP>

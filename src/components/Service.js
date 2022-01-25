@@ -9,6 +9,14 @@ const StyledServiceSection = styled.div`
   color: #fff;
   padding-top: 5rem;
   padding-bottom: 10rem;
+  @media (max-width: 768px) {
+
+  }
+  @media screen and (max-width: 568px) {
+      margin-top: 0.5;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
 `
 
 const Underline = styled.div`
@@ -18,7 +26,9 @@ const Underline = styled.div`
   margin-right: 1rem;
   margin-top: 0.4rem;
   @media (max-width: 768px) {
-    /* width: 400px; */
+  }
+  @media screen and (max-width: 568px) {
+    width: 40px;
   }
 `
 
@@ -26,6 +36,9 @@ const StyledH5 = styled.h5`
   color: #fff;
   font-size: 15px;
   margin-bottom: 2.5rem;
+  @media (max-width: 768px) {
+
+  }
 
   @media screen and (max-width: 568px) {
     margin-bottom: 1rem;
@@ -38,6 +51,13 @@ const StyledHeading = styled.section`
   display: flex;
   margin-left: 10rem;
   margin-right: 10rem;
+  @media (max-width: 768px) {
+
+  }
+  @media screen and (max-width: 568px) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+  }
 `
 
 

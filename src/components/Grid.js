@@ -7,8 +7,8 @@ import Gallery from "react-photo-gallery"
 const photos = [
 
   {
-    src: "/pic2.jpeg",
-    width: 4,
+    src: "/pic12.jpeg",
+    width: 3,
     height: 2,
   },
 
@@ -29,14 +29,14 @@ const photos = [
   },
   {
       src: "/pic4.jpeg",
-      width: 4,
-      height: 3,
+      width: 3,
+      height: 2,
     },
-    {
-        src: "/pic7.jpeg",
-        width: 1,
-    height: 1,
-  },
+//     {
+//         src: "/pic7.jpeg",
+//         width: 4,
+//     height: 2,
+//   },
 ]
 
 
