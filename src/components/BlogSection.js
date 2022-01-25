@@ -42,6 +42,10 @@ const StyledHeading = styled.section`
   }
 `
 
+const StyledBlogSection = styled.section`
+
+`
+
 
 const BlogSection = () => {
     return (
@@ -49,7 +53,10 @@ const BlogSection = () => {
         <StyledHeading>
           <Underline />
           <StyledH5>FROM THE BLOG</StyledH5>
-        </StyledHeading>
+            </StyledHeading>
+            <StyledBlogSection>
+
+            </StyledBlogSection>
       </StyledSection>
     )
 };

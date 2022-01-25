@@ -58,18 +58,21 @@ const StyledH3 = styled.h3`
   display: flex;
   justify-content: center;
   flex: 0.3;
-  background-color: #af3277;
   align-self: center;
 
   padding-top: 2rem;
   padding-bottom: 2rem;
 
   @media (max-width: 768px) {
+    background-color: #af3277;
+
     width: 8rem;
     padding-left: 2rem;
     padding-right: 2rem;
   }
   @media screen and (max-width: 568px) {
+    background-color: #af3277;
+
     font-size: 12px;
     width: 100%;
     padding-top: 0.6rem;
