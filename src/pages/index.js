@@ -9,10 +9,15 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Gallery from "../components/Gallery"
 import Service from "../components/Service"
+import BlogSection from "../components/BlogSection"
 
 const StyledAboutSection = styled.section`
   display: flex;
   /* justify-content: space-between;   */
+    @media (max-width: 768px) {
+
+      flex-direction: column;
+    }
   @media screen and (max-width: 568px) {
     flex-direction: column;
   }
@@ -60,6 +65,8 @@ const StyledImg = styled.img`
   margin-left: 3rem;
 
   @media (max-width: 768px) {
+    margin-top: 1rem;
+    height: 15rem;
   }
   @media screen and (max-width: 568px) {
     margin-left: 0;
@@ -72,6 +79,10 @@ const StyledH5 = styled.h5`
   color: #000;
   font-size: 15px;
   margin-bottom: 2.5rem;
+
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
 
   @media screen and (max-width: 568px) {
     margin-bottom: 1rem;
@@ -95,6 +106,9 @@ const StyledP = styled.p`
   margin-bottom: 2rem;
   color: #000;
   font-size: 1.2rem;
+  @media (max-width: 768px) {
+    margin-top: 0.5rem;
+    }
   @media screen and (max-width: 568px) {
     font-size: 1rem;
     margin-top: 1rem;
@@ -178,6 +192,7 @@ const IndexPage = () => (
       </StyledDiv>
 
       <Service />
+      <BlogSection />
     </Layout>
   </>
 )

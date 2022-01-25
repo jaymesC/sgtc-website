@@ -1,19 +1,18 @@
 import React from "react"
 import styled from "styled-components"
 import Details from "./Details"
-import{ data} from '../../data'
+import { data } from "../../data"
 
 const StyledServiceSection = styled.div`
   background-image: url("/background.jpg");
   background-size: cover;
   color: #fff;
   padding-top: 5rem;
-  padding-bottom: 10rem;
+  padding-bottom: 8rem;
   @media (max-width: 768px) {
-
   }
   @media screen and (max-width: 568px) {
-      margin-top: 0.5;
+    margin-top: 0.5;
     padding-top: 1rem;
     padding-bottom: 2rem;
   }
@@ -37,7 +36,6 @@ const StyledH5 = styled.h5`
   font-size: 15px;
   margin-bottom: 2.5rem;
   @media (max-width: 768px) {
-
   }
 
   @media screen and (max-width: 568px) {
@@ -45,22 +43,17 @@ const StyledH5 = styled.h5`
   }
 `
 
-
-
 const StyledHeading = styled.section`
   display: flex;
   margin-left: 10rem;
   margin-right: 10rem;
   @media (max-width: 768px) {
-
   }
   @media screen and (max-width: 568px) {
-      margin-left: 1rem;
-      margin-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 `
-
-
 
 const Service = () => {
   return (
@@ -68,12 +61,10 @@ const Service = () => {
       <StyledHeading>
         <Underline />
         <StyledH5>OUR SERVICES</StyledH5>
-          </StyledHeading>
-          {data.map(x => (
-                    
-              <Details {...x} />
-              
-                ))}
+      </StyledHeading>
+      {data.map(x => (
+        <Details {...x} />
+      ))}
     </StyledServiceSection>
   )
 }

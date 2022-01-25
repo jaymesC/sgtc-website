@@ -11,7 +11,8 @@ const StyledArea = styled.div`
   display: flex;
   /* width: 100vw; */
   @media (max-width: 768px) {
-    /* width: 400px; */
+    margin-left: 2rem;
+    margin-right: 0;
   }
   @media screen and (max-width: 568px) {
     margin-left: 0;
@@ -59,19 +60,13 @@ const StyledH3 = styled.h3`
   justify-content: center;
   flex: 0.3;
   background-color: #af3277;
-  /* width: 80%; */
-  /* 
-  align-items: center; */
-  /* padding-right: 2rem; */
-  /* margin-right: 0.2rem; */
-  /* align-items: center; */
   align-self: center;
-  /* margin-left: 2rem; */
+
   padding-top: 2rem;
   padding-bottom: 2rem;
-  /* text-align: center; */
+
   @media (max-width: 768px) {
-    /* width: 400px; */
+    padding-right: 2rem;
   }
   @media screen and (max-width: 568px) {
     font-size: 12px;
