@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components"
 import BlogCard from './BlogCard';
+import {blogPost} from '../../blogPost'
 
 
 
@@ -50,7 +51,8 @@ const StyledHeading = styled.section`
 `
 
 const StyledBlogSection = styled.section`
-
+display: flex;
+justify-content: space-between;
 `
 
 
@@ -62,7 +64,10 @@ const BlogSection = () => {
           <StyledH5>FROM THE BLOG</StyledH5>
             </StyledHeading>
             <StyledBlogSection>
-                <BlogCard />
+                {blogPost.map(post => (
+                    
+                <BlogCard {...post} />
+                ))}
             </StyledBlogSection>
       </StyledSection>
     )

@@ -1,24 +1,27 @@
-export default blogPost = [
+export const blogPost = [
   {
     src: "/blog1.PNG",
-    title: " HOW CAN ONE IDENTIFY THE TRUE CHURCH OF GOD TODAY?",
+    title: " How can one identify the true church of god today?",
     description:
       "As a result of many churches on land today, you may find it difficult to identify which of the Churches around is the true gathering of God's children where a true worshipper ...",
     date: "November 12, 2021",
-    page: "./",
+    page: "blog-1",
   },
   {
-    src: "",
-    title: "",
-    description: "",
-    date: "",
-    page: "",
+    src: "/blog2.PNG",
+    title: "The bride of christ in these last days",
+    description: `The concept “Bride” from the dictionary meaning is 'A newly married woman or a woman about to be married'.
+In the Gospel of John, John the Baptist speaks of Jesus Christ as the Bridegroom...
+`,
+    date: "December 18, 2021",
+    page: "blog-2",
   },
-  //   {
-  //     src: "",
-  //     title: "",
-  //     description: "",
-  //     date: "",
-  //     page: "",
-  //   },
+  {
+    src: "/blog1.PNG",
+    title: " How can one identify the true church of god today?",
+    description:
+      "As a result of many churches on land today, you may find it difficult to identify which of the Churches around is the true gathering of God's children where a true worshipper ...",
+    date: "November 12, 2021",
+    page: "blog-1",
+  },
 ]
