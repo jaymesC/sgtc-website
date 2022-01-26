@@ -51,7 +51,6 @@ const StyledContainer = styled.div`
 
 const StyledH3 = styled.h3`
   font-size: 16px;
-  font-weight: 500;
   @media (max-width: 768px) {
   }
 
