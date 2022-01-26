@@ -8,7 +8,7 @@ const StyledCardContainer = styled.div`
   margin-bottom:1rem;
   width: 25rem;
   background: #fff;
-  width: 20em;
+  /* width: 20em; */
   /* border-radius: 0.6em; */
   /* margin: 1em; */
   overflow: hidden;
