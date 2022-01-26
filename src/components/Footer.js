@@ -4,15 +4,19 @@ import { FaFacebookF } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
 import { FaTwitter } from "react-icons/fa"
 import { FaYoutube } from "react-icons/fa"
+import { FaPhoneAlt } from "react-icons/fa"
+import { FaEnvelope } from "react-icons/fa"
+import { FaMapMarkerAlt } from "react-icons/fa"
 import { Link } from "gatsby"
 
 
 const StyledFooter = styled.section`
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   padding-left: 10rem;
-  padding-top: 3rem;
-  padding-bottom: 17rem;
+  padding-right: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 15rem;
   color: #fff;
   background-blend-mode: multiply;
   background-image: radial-gradient(
@@ -21,21 +25,44 @@ const StyledFooter = styled.section`
       #c52465 90%
     ),
     url("/Footerbackground.jpg");
+  @media (max-width: 768px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  @media screen and (max-width: 568px) {
+  }
 `
 
 const StyledH3 = styled.h3`
   color: #fff;
   font-size: 16px;
   font-weight: 500;
+  @media (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 568px) {
+  }
 `
 
 const StyledAboutSection = styled.section`
   width: 20rem;
+  @media (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 568px) {
+  }
 `
 
 const StyledLinks = styled.section`
   display: flex;
-  /* justify-content:space-around; */
+  @media (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 568px) {
+  }
 `
 const StyledIcon = styled.section`
   padding: 10px;
@@ -51,11 +78,21 @@ const StyledIcon = styled.section`
     color: #faec5c;
     transition: all 0.5s ease;
   }
+  @media (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 568px) {
+  }
 `
 
 const StyledP = styled.p`
   margin-top: 2rem;
   margin-bottom: 2rem;
+  @media (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 568px) {
+  }
 `
 
 const StyledQuickLinks = styled.div`
@@ -63,8 +100,13 @@ const StyledQuickLinks = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 20rem;
+  @media (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 568px) {
+  }
 `
-const FooterLink = styled(Link)`
+const StyledFooterLink = styled(Link)`
   text-decoration: none;
   color: #fff;
   border-bottom: 0.5px solid #f4e8ff;
@@ -74,7 +116,63 @@ const FooterLink = styled(Link)`
   :hover {
     color: #faec5c;
   }
+  @media (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 568px) {
+  }
 `
+
+const StyledText = styled.p`
+  margin-left: 1rem;
+  @media (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 568px) {
+  }
+`
+
+const StyledFooterContact = styled.div`
+  width: 25rem;
+  @media (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 568px) {
+  }
+`
+const StyledLocation = styled.div`
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 568px) {
+  }
+`
+const StyledNumber = styled.div`
+  margin-top: 2rem;
+  display: flex;
+  /* justify-content:center; */
+  align-items: center;
+  @media (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 568px) {
+  }
+`
+const StyledEmail = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  @media (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 568px) {
+  }
+`
+
 
 const Footer = () => {
   return (
@@ -99,14 +197,32 @@ const Footer = () => {
             <FaYoutube />
           </StyledIcon>
         </StyledLinks>
-          </StyledAboutSection>
-          <StyledQuickLinks>
-              <StyledH3>QUICK LINKS</StyledH3>
-            <FooterLink to='/'>Home</FooterLink>
-            <FooterLink to='/about'>About</FooterLink>
-            <FooterLink to='/blog'>Blog</FooterLink>
-            <FooterLink to='/contact'>Contact</FooterLink>
-          </StyledQuickLinks>
+      </StyledAboutSection>
+      <StyledQuickLinks>
+        <StyledH3>QUICK LINKS</StyledH3>
+        <StyledFooterLink to="/">Home</StyledFooterLink>
+        <StyledFooterLink to="/about">About</StyledFooterLink>
+        <StyledFooterLink to="/blog">Blog</StyledFooterLink>
+        <StyledFooterLink to="/contact">Contact</StyledFooterLink>
+      </StyledQuickLinks>
+      <StyledFooterContact>
+        <StyledH3>HAVE A QUESTION?</StyledH3>
+        <StyledLocation>
+          <FaMapMarkerAlt />
+          <StyledText>
+            No. 1b Tony Close Off Okilton Drive, Off Ada George Road, Port
+            Harcourt.
+          </StyledText>
+        </StyledLocation>
+        <StyledNumber>
+          <FaPhoneAlt />
+          <StyledText>+2349075417094</StyledText>
+        </StyledNumber>
+              <StyledEmail>
+                  <FaEnvelope />
+                  <StyledText>sovereigngracetabernacle1@gmail.com</StyledText>
+        </StyledEmail>
+      </StyledFooterContact>
     </StyledFooter>
   )
 }

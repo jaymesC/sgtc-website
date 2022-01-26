@@ -40,4 +40,3 @@ Layout.propTypes = {
 
 export default Layout
 
-//  © {new Date().getFullYear()}
