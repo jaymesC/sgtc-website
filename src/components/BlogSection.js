@@ -9,11 +9,16 @@ const StyledSection = styled.div`
   margin-top: 5rem;
   margin-left: 10rem;
   margin-right: 10rem;
+  margin-bottom: 5rem;
   @media (max-width: 768px) {
     margin-left: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
   }
   @media screen and (max-width: 568px) {
+    margin-top: 3rem;
     margin-left: 0;
+    margin-bottom: 2rem;
   }
 `
 
@@ -47,12 +52,20 @@ const StyledHeading = styled.section`
   @media screen and (max-width: 568px) {
     margin-left: 1rem;
     margin-right: 1rem;
-  }
+}
 `
 
 const StyledBlogSection = styled.section`
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+      flex-direction: column;
+    }
+    
+    @media screen and (max-width: 568px) {
+      margin-bottom: 1rem;
+    flex-direction: column;
+  }
 `
 
 

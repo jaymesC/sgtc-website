@@ -5,6 +5,7 @@ import styled from "styled-components"
 const StyledCardContainer = styled.div`
   font-family: "Open Sans", Arial, sans-serif;
   margin-left: 3rem;
+  margin-bottom:1rem;
   width: 25rem;
   background: #fff;
   width: 20em;
@@ -20,10 +21,11 @@ const StyledCardContainer = styled.div`
       0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
   }
   @media (max-width: 768px) {
+      width: 100%;
     margin-left: 1rem;
   }
   @media screen and (max-width: 568px) {
-    margin-left: 0;
+    /* margin-left: 0; */
   }
 `
 
@@ -37,8 +39,9 @@ const StyledCardImage = styled.img`
   }
 `
 
-const StyledTitle = styled.h3`
+const StyledTitle = styled.h4`
   color: #333;
+  font-weight: 500;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
@@ -51,7 +54,7 @@ const StyledDate = styled.h5`
   padding-bottom: 0.5rem;
   color: rgb(102, 102, 102);
   font-size: 14px;
-  font-weight: 700;
+  font-weight:300;
 `
 
 const StyledParagraph = styled.p`
@@ -59,6 +62,9 @@ const StyledParagraph = styled.p`
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
+  @media screen and (max-width: 568px) {
+      font-size: 14px;
+  }
 `
 const StyledButton = styled.button`
   background-color: #af3277;
@@ -71,6 +77,8 @@ const StyledButton = styled.button`
   border: #af3277;
   box-shadow: 0 12px 12px -11px #af3277;
   :hover {
+    background-color: #a32f6f;
+    box-shadow: 0 8px 14px -11px #af3277;
   }
   @media screen and (max-width: 568px) {
     height: 2rem;

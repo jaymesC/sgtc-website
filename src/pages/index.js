@@ -126,6 +126,8 @@ const StyledButton = styled.button`
   border: #af3277;
   box-shadow: 0 12px 12px -11px #af3277;
   :hover {
+    background-color: #a32f6f;
+    box-shadow: 0 8px 14px -11px #af3277;
   }
   @media screen and (max-width: 568px) {
     height: 2rem;
