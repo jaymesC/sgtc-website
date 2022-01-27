@@ -30,6 +30,13 @@ const StyledFooter = styled.section`
     padding-right: 1rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 2rem;
+
   }
 
   @media screen and (max-width: 568px) {
@@ -61,7 +68,12 @@ const StyledH3 = styled.h3`
 
 const StyledAboutSection = styled.section`
   width: 20rem;
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+      margin-right: 2rem;
+  }
   @media (max-width: 768px) {
+
   }
 
   @media screen and (max-width: 568px) {
@@ -87,7 +99,7 @@ const StyledIcon = styled.section`
   transition: all 0.5s ease;
 
   :hover {
-    color: #faec5c;
+    color: #ffd919;
     transition: all 0.5s ease;
   }
   @media (max-width: 768px) {
@@ -116,7 +128,11 @@ const StyledQuickLinks = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 20rem;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-right: 2rem;
+  }
   @media (max-width: 768px) {
+    /* margin-right: 2rem; */
   }
 
   @media screen and (max-width: 568px) {
@@ -127,9 +143,8 @@ const StyledFooterLink = styled(Link)`
   text-decoration: none;
   border-bottom: 0.5px solid #f4e8ff;
   padding-bottom: 10px;
-  /* margin-bottom: 2rem;*/
   :hover {
-    color: #faec5c;
+    color: #ffd919;
   }
   @media (max-width: 768px) {
   }

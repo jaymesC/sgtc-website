@@ -1,8 +1,5 @@
 import * as React from "react"
-// import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
-import { Link } from "gatsby"
 import { navigate } from "gatsby"
 import Carousel from "nuka-carousel"
 import Layout from "../components/layout"
@@ -13,7 +10,6 @@ import BlogSection from "../components/BlogSection"
 
 const StyledAboutSection = styled.section`
   display: flex;
-  /* justify-content: space-between;   */
     @media (max-width: 768px) {
 
       flex-direction: column;
@@ -90,7 +86,7 @@ const StyledH5 = styled.h5`
 `
 const StyledH1 = styled.h1`
   line-height: 3.8rem;
-  color: #000;
+  color: #0f0f0f;
   font-size: 3rem;
   @media (max-width: 768px) {
     font-size: 2rem;
@@ -104,7 +100,7 @@ const StyledH1 = styled.h1`
 const StyledP = styled.p`
   margin-top: 2.5rem;
   margin-bottom: 2rem;
-  color: #777;
+  color: #666566;
   font-size: 1.2rem;
   @media (max-width: 768px) {
     margin-top: 0.5rem;
@@ -167,9 +163,9 @@ const IndexPage = () => (
                 and people
               </StyledH1>
               <StyledP>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Tempora, architecto a expedita nemo iure et! Lorem ipsum dolor,
-                sit amet consectetur adipisicing elit. Illo, fugiat.
+                Sovereign Grace Tabernacle is a full Gospel believing Church, we
+                believe in the message of "THIS HOUR" that will prepare the
+                bride of Christ for the second coming of Jesus Christ.
               </StyledP>
               <StyledButton
                 onClick={() => {

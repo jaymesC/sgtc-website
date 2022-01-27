@@ -5,7 +5,7 @@ import styled from "styled-components"
 const StyledCardContainer = styled.div`
   font-family: "Open Sans", Arial, sans-serif;
   margin-left: 3rem;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
   width: 25rem;
   background: #fff;
   /* width: 20em; */
@@ -20,8 +20,12 @@ const StyledCardContainer = styled.div`
       0 8px 32px -8px hsla(0, 0%, 0%, 0.14),
       0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 40rem;
+  }
   @media (max-width: 768px) {
-      width: 100%;
+    width: 100%;
     margin-left: 1rem;
   }
   @media screen and (max-width: 568px) {

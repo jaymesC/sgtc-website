@@ -10,11 +10,17 @@ const StyledSection = styled.div`
   margin-left: 10rem;
   margin-right: 10rem;
   margin-bottom: 5rem;
+  @media (min-width: 768px) and (max-width: 1024px) {
+      margin-left: 1rem;
+      /* margin-right: 1rem; */
+      margin-bottom: 3rem;
+  }
   @media (max-width: 768px) {
     margin-left: 1rem;
     margin-right: 2rem;
     margin-bottom: 3rem;
   }
+
   @media screen and (max-width: 568px) {
     margin-top: 3rem;
     margin-left: 0;
@@ -58,12 +64,16 @@ const StyledHeading = styled.section`
 const StyledBlogSection = styled.section`
   display: flex;
   justify-content: space-between;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    flex-direction: column;
+    margin-left: 2rem;
+  }
   @media (max-width: 768px) {
-      flex-direction: column;
-    }
-    
-    @media screen and (max-width: 568px) {
-      margin-bottom: 1rem;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 568px) {
+    margin-bottom: 1rem;
     flex-direction: column;
   }
 `
