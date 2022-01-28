@@ -280,8 +280,7 @@ const Footer = () => {
           </StyledContainer>
           <TradeMark>
             {" "}
-            Copyright ©{new Date().getFullYear()} Sovereign Grace Tabernacle |
-            JamesJay
+            Copyright ©{new Date().getFullYear()} Sovereign Grace Tabernacle 
           </TradeMark>
         </StyledFooter>
       </>

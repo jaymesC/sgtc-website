@@ -60,7 +60,11 @@ const StyledHeading = styled.section`
 
 const Service = () => {
   return (
-    <StyledServiceSection>
+    <StyledServiceSection
+      data-sal="slide-up"
+        data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+      data-sal-delay="200" // adds delay to the animation (from 5 to 1000 ms)
+      data-sal-easing="ease">
       <StyledHeading>
         <Underline />
         <StyledH5>OUR SERVICES</StyledH5>
