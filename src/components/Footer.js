@@ -107,6 +107,8 @@ const StyledIcon = styled.section`
 
   @media screen and (max-width: 568px) {
     margin-top: 0;
+    font-size: 14px;
+    padding: 5px;
   }
 `
 
@@ -162,7 +164,7 @@ const StyledText = styled.p`
 
 @media screen and (max-width: 568px) {
       margin-left: 1rem;
-      font-size: 14px;
+      font-size: 12px;
   }
 `
 
@@ -218,7 +220,7 @@ const TradeMark = styled.p`
   @media screen and (max-width: 568px) {
       width: 20rem;
       padding-top: 5rem;
-      font-size: 14px;
+      font-size: 12px;
   }
 `
 
@@ -231,9 +233,9 @@ const Footer = () => {
             <StyledAboutSection>
               <StyledH3>ABOUT SOVEREIGN GRACE TABERNACLE</StyledH3>
               <StyledP>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                facere aut eius repellendus blanditiis recusandae ipsum. A ad
-                esse provident!
+                Sovereign Grace Tabernacle is a full Gospel believing Church, we
+                believe in the message of "THIS HOUR" that will prepare the
+                bride of Christ for the second coming of Jesus Christ.
               </StyledP>
               <StyledLinks>
                 <StyledIcon>
@@ -278,7 +280,8 @@ const Footer = () => {
           </StyledContainer>
           <TradeMark>
             {" "}
-            Copyright ©{new Date().getFullYear()} All rights reserved | JamesJay
+            Copyright ©{new Date().getFullYear()} Sovereign Grace Tabernacle |
+            JamesJay
           </TradeMark>
         </StyledFooter>
       </>

@@ -58,6 +58,8 @@ const StyledBox = styled.section`
   }
 `
 const StyledImg = styled.img`
+/* padding-top: 3rem; */
+height: 20rem;
   margin-left: 3rem;
 
   @media (max-width: 768px) {
