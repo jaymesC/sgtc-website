@@ -95,8 +95,8 @@ const BlogCard = ({ page, title, date, src, description }) => {
   return (
     <StyledCardContainer
       data-sal="slide-up"
-      data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
-      data-sal-delay="300"
+      data-sal-duration="1500"
+      data-sal-delay="100"
       data-sal-easing="ease"
     >
       <StyledCardImage src={src} />

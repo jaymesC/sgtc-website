@@ -62,8 +62,8 @@ const Service = () => {
   return (
     <StyledServiceSection
       data-sal="slide-up"
-        data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
-      data-sal-delay="200" // adds delay to the animation (from 5 to 1000 ms)
+        data-sal-duration="1500" 
+      data-sal-delay="50" 
       data-sal-easing="ease">
       <StyledHeading>
         <Underline />

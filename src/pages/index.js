@@ -157,8 +157,18 @@ const IndexPage = () => (
       <StyledDiv>
         <StyledAboutSection>
           <StyledBox>
-            <Underline />
-            <StyledParagraph>
+            <Underline
+              data-sal="slide-right"
+              data-sal-duration="1000"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+            />
+            <StyledParagraph
+              data-sal="slide-right"
+              data-sal-duration="1000"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+            >
               <StyledH5>WHY OUR CHURCH</StyledH5>
               <StyledH1>
                 We are a church that believes in Jesus, a church that loves God
