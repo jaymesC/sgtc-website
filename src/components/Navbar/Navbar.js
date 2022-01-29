@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 // import Logo from "./Logo"
 
 const Navigation = styled.nav`
-  height: 9vh;
+  height: 10vh;
   display: flex;
   background-color: #fff;
   color: #af3277;
@@ -49,7 +49,7 @@ const Img = styled(motion.section)`
     padding-top: 8px;
     padding-left: 10px;
     margin-right: 0rem;
-    width: 50px;
+    width: 75px;
   }
 `
 
@@ -111,8 +111,8 @@ const Navbar = () => {
         <Link to="/">
           <StaticImage
             layout="constrained"
-            src="../../images/gatsby-icon.png"
-            width={65}
+            src="../../images/logo.png"
+            width={95}
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
           />
