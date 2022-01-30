@@ -20,7 +20,6 @@ margin-bottom: 5rem;
   }
   
   @media screen and (max-width: 568px) {
-    /* margin-left: 1rem; */
     margin-right: 1rem;
 
   }
