@@ -29,6 +29,7 @@ const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
   @media screen and (max-width: 568px) {
+    margin-top: 3rem;
     flex-direction: column;
     margin-bottom: 1rem;
   }

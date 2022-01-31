@@ -15,8 +15,8 @@ const Navigation = styled.nav`
   top: 0;
   justify-content: space-between;
   text-transform: uppercase;
-  border-bottom: 2px solid #33333320;
-  box-shadow: -2px -1px 11px -3px #000000;
+  /* border-bottom: 2px solid #33333320; */
+  /* box-shadow: -2px -1px 11px -3px #000000; */
   margin: 0 auto;
   padding: 0 5vw;
   z-index: 99;
@@ -46,7 +46,7 @@ const Img = styled(motion.section)`
   /* margin-left: 6rem; */
   @media (max-width: 768px) {
     margin-left: 0;
-    padding-top: 8px;
+    padding-top: 3px;
     padding-left: 10px;
     margin-right: 0rem;
     width: 75px;

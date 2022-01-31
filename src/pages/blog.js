@@ -32,7 +32,7 @@ const StyledWriteUp = styled.div`
   align-items: center;
   margin-bottom: 3rem;
   @media screen and (max-width: 568px) {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
   }
 `

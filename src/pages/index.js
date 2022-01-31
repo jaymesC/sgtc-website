@@ -59,16 +59,17 @@ const StyledBox = styled.section`
   }
 `
 const StyledImg = styled.img`
-/* padding-top: 3rem; */
+margin-top: 4rem;
 height: 20rem;
-  margin-left: 3rem;
+margin-left: 3rem;
 
-  @media (max-width: 768px) {
-    margin-top: 1rem;
-    height: 15rem;
-  }
-  @media screen and (max-width: 568px) {
-    margin-left: 0;
+@media (max-width: 768px) {
+  margin-top: 1rem;
+  height: 15rem;
+}
+@media screen and (max-width: 568px) {
+  margin-top: 0;
+  margin-left: 0;
     height: 10rem;
     /* width:10rem; */
   }
@@ -142,17 +143,17 @@ const IndexPage = () => (
 
       <Carousel
         autoplay={true}
-        // autoplayReverse={true}
+        // vertical={true}
         // slideWidth={0.8}
         transitionMode="fade"
         withoutControls={true}
         wrapAround={true}
       >
-        {/* <img
-        src="/sliderImage1.jpeg"
+        <img src="/slide1.jpg" alt="" />
+        <img
+        src="/slide2.jpg"
         alt=""
-      /> */}
-        <img src="/sliderImage2.jpeg" alt="" />
+      />
       </Carousel>
 
       <StyledDiv>
