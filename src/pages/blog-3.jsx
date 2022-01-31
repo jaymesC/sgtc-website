@@ -99,7 +99,7 @@ const thirdBlog = () => {
         <StyledLandingImage src="/blog4.jpg" />
         <StyledHeader>
           <StyledH1>Lorem ipsum dolor sit amet consectetur</StyledH1>
-          <StyledH5>November 12, 2021</StyledH5>
+          <StyledH5>January 12, 2022</StyledH5>
         </StyledHeader>
         <StyledP>
           The concept “Bride” from the dictionary meaning is “A newly married

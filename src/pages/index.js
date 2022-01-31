@@ -8,13 +8,11 @@ import Gallery from "../components/Gallery"
 import Service from "../components/Service"
 import BlogSection from "../components/BlogSection"
 
-
 const StyledAboutSection = styled.section`
   display: flex;
-    @media (max-width: 768px) {
-
-      flex-direction: column;
-    }
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
   @media screen and (max-width: 568px) {
     flex-direction: column;
   }
@@ -59,17 +57,17 @@ const StyledBox = styled.section`
   }
 `
 const StyledImg = styled.img`
-margin-top: 4rem;
-height: 20rem;
-margin-left: 3rem;
+  margin-top: 4rem;
+  height: 20rem;
+  margin-left: 3rem;
 
-@media (max-width: 768px) {
-  margin-top: 1rem;
-  height: 15rem;
-}
-@media screen and (max-width: 568px) {
-  margin-top: 0;
-  margin-left: 0;
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+    height: 15rem;
+  }
+  @media screen and (max-width: 568px) {
+    margin-top: 0;
+    margin-left: 0;
     height: 10rem;
     /* width:10rem; */
   }
@@ -143,17 +141,13 @@ const IndexPage = () => (
 
       <Carousel
         autoplay={true}
-        // vertical={true}
-        // slideWidth={0.8}
+        pauseOnHover={true}
         transitionMode="fade"
         withoutControls={true}
         wrapAround={true}
       >
         <img src="/slide1.jpg" alt="" />
-        <img
-        src="/slide2.jpg"
-        alt=""
-      />
+        <img src="/slide2.jpg" alt="" />
       </Carousel>
 
       <StyledDiv>
@@ -207,12 +201,5 @@ const IndexPage = () => (
   </>
 )
 
-export default IndexPage
+export default IndexPage;
 
-// <StaticImage
-//   layout="constrained"
-//   src="../images/gatsby-icon.png"
-//   width={300}
-//   quality={95}
-//   formats={["AUTO", "WEBP", "AVIF"]}
-// />
