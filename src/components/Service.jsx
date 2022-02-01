@@ -62,8 +62,8 @@ const Service = () => {
   return (
     <StyledServiceSection
       data-sal="slide-up"
-        data-sal-duration="1500" 
-      data-sal-delay="50" 
+      data-sal-duration="1500" 
+      data-sal-delay="0" 
       data-sal-easing="ease">
       <StyledHeading>
         <Underline />

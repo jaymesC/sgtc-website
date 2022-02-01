@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { navigate } from "gatsby"
 import Carousel from "nuka-carousel"
 import Layout from "../components/layout"
+import { motion } from "framer-motion"
 import Seo from "../components/seo"
 import Gallery from "../components/Gallery"
 import Service from "../components/Service"
@@ -43,7 +44,7 @@ const Underline = styled.div`
   }
 `
 
-const StyledParagraph = styled.section`
+const StyledParagraph = styled(motion.section)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -141,7 +142,7 @@ const IndexPage = () => (
 
       <Carousel
         autoplay={true}
-        pauseOnHover={true}
+        pauseOnHover={false}
         transitionMode="fade"
         withoutControls={true}
         wrapAround={true}
@@ -154,16 +155,14 @@ const IndexPage = () => (
         <StyledAboutSection>
           <StyledBox>
             <Underline
-              data-sal="slide-right"
-              data-sal-duration="1000"
-              data-sal-delay="300"
-              data-sal-easing="ease"
+              initial={{ x: -250, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.3, duration: 1 }}
             />
             <StyledParagraph
-              data-sal="slide-right"
-              data-sal-duration="1000"
-              data-sal-delay="300"
-              data-sal-easing="ease"
+              initial={{ x: -250, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.3, duration: 1 }}
             >
               <StyledH5>WHY OUR CHURCH</StyledH5>
               <StyledH1>

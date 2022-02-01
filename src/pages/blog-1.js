@@ -96,7 +96,7 @@ const secondBlog = () => {
     <Layout>
       <Seo title="The bride of Christ in these last days:" />
       <StyledContainer>
-        <StyledLandingImage src="/blog4.jpg" />
+        <StyledLandingImage src="/blog3.jpg" />
         <StyledHeader>
           <StyledH1>
             How can one identify the true Church of God today?

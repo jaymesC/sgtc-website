@@ -18,10 +18,11 @@ const Navigation = styled.nav`
   /* border-bottom: 2px solid #33333320; */
   /* box-shadow: -2px -1px 11px -3px #000000; */
   margin: 0 auto;
-  padding: 0 5vw;
+  padding: 0 10vw;
   z-index: 99;
   align-self: center;
   @media (max-width: 768px) {
+    padding: 0 5vw;
     height: 8vh;
     top: 0;
     left: 0;

@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@emailjs/browser": "^3.4.0",
     "@fontsource/open-sans": "^4.5.3",
     "babel-plugin-styled-components": "^2.0.2",
     "framer-motion": "^6.2.1",
