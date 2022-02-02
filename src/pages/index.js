@@ -65,7 +65,7 @@ const StyledImg = styled.img`
 
   @media (max-width: 768px) {
     margin-top: 1rem;
-    height: 15rem;
+    height: 25rem;
   }
   @media screen and (max-width: 568px) {
     margin-top: 0;
@@ -103,7 +103,7 @@ const StyledH1 = styled.h1`
   }
 `
 const StyledP = styled.p`
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   color: #666566;
   font-size: 1.2rem;

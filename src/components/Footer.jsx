@@ -49,6 +49,8 @@ const StyledContainer = styled.div`
   display: flex;
   justify-content: space-between;
   @media (max-width: 768px) {
+    flex-direction: column;
+
   }
 
   @media screen and (max-width: 568px) {
