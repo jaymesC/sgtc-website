@@ -91,7 +91,7 @@ const StyledH5 = styled.h5`
 `
 const StyledH1 = styled.h1`
   line-height: 3.8rem;
-  color: #af3277;
+  color: #4e0056;
   font-size: 2.8rem;
   @media (max-width: 768px) {
     font-size: 2rem;

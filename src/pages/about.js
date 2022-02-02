@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const StyledContainer = styled.div`
-  background-blend-mode: multiply;
+  /* background-blend-mode: multiply; */
   background-image: url("/aboutbg.jpg");
   margin-left: 10rem;
   margin-right: 10rem;
@@ -21,16 +21,20 @@ const StyledLandingImage = styled.img`
   }
 `
 
-const StyledH1 = styled.h1`
-
-`
+const StyledH1 = styled.h1``
 const StyledH5 = styled.h5`
-
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 1rem;
 `
 
 const StyledSpan = styled.span`
-border-bottom: 5px solid #af3277;
-/* color: #af3277; */
+  border-bottom: 5px solid #af3277;
+  /* color: #af3277; */
+`
+
+const StyledP = styled.p`
+
 `
 
 const about = () => {
@@ -43,7 +47,13 @@ const about = () => {
         <StyledH1>
           <StyledSpan>Abou</StyledSpan>t Us
         </StyledH1>
-        <StyledH5></StyledH5>
+        <StyledH5>OUR MISSION & VISION</StyledH5>
+        <StyledP>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
+          doloremque odit dignissimos voluptatibus, quia eius consequuntur minus
+          ipsam aliquid deleniti in ducimus saepe ipsum reprehenderit laudantium
+          id perspiciatis quidem excepturi?
+        </StyledP>
       </StyledContainer>
     </Layout>
   )

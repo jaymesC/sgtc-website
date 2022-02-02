@@ -19,7 +19,7 @@ const StyledFormContainer = styled.div`
   }
 
   @media screen and (max-width: 568px) {
-    margin-top: 1rem;
+    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
     /* margin-bottom: 1rem; */
