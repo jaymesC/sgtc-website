@@ -8,6 +8,7 @@ import Seo from "../components/seo"
 import Gallery from "../components/Gallery"
 import Service from "../components/Service"
 import BlogSection from "../components/BlogSection"
+import Image from "../components/Image"
 
 
 const StyledAboutSection = styled.section`
@@ -151,8 +152,13 @@ const IndexPage = () => (
         withoutControls={true}
         wrapAround={true}
       >
-        <img src="/slide1.jpg" alt="" />
-        <img src="/slide2.jpg" alt="" />
+        {/* <img src="/slide1.jpg" alt="" /> */}
+        <Image
+          src="slide1.jpg"
+          alt="firstSlide"
+
+        />
+        <Image src="slide2.jpg" alt="secondslide" />
       </Carousel>
 
       <StyledDiv>
