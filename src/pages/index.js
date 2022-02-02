@@ -111,6 +111,7 @@ const StyledP = styled.p`
     margin-top: 0.5rem;
   }
   @media screen and (max-width: 568px) {
+    font-size: 0.2rem;
     font-size: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
