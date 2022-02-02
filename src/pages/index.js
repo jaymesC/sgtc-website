@@ -58,8 +58,9 @@ const StyledBox = styled.section`
   }
 `
 const StyledImg = styled.img`
-  margin-top: 4rem;
-  height: 20rem;
+  /* margin-top: 4rem; */
+  height: 30rem;
+  /* width: 40rem; */
   margin-left: 3rem;
 
   @media (max-width: 768px) {
@@ -69,7 +70,7 @@ const StyledImg = styled.img`
   @media screen and (max-width: 568px) {
     margin-top: 0;
     margin-left: 0;
-    height: 10rem;
+    height: 16rem;
     /* width:10rem; */
   }
 `
@@ -186,7 +187,7 @@ const IndexPage = () => (
           </StyledBox>
           <StyledImg
             layout="constrained"
-            src="/test.PNG"
+            src="/heroImage.jpg"
             quality={95}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="About image"

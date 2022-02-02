@@ -46,7 +46,7 @@ const StyledForm = styled.form`
 
 const StyledH2 = styled.h2`
   color: #fff;
-  margin-left: 10rem;
+  text-align: center;
   padding-top: 3rem;
   margin-bottom: 3rem;
   @media (max-width: 768px) {
@@ -54,7 +54,7 @@ const StyledH2 = styled.h2`
 
   @media screen and (max-width: 568px) {
     font-size: 18px;
-    margin-left: 2rem;
+    text-align: center;
     padding-top: 1rem;
     margin-bottom: 1rem;
   }
