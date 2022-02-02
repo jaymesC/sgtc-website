@@ -40,7 +40,7 @@ const StyledArea = styled.div`
 //   }
 // `
 const StyledDate = styled.section`
-z-index: 9;
+/* z-index: 9; */
   display: flex;
   justify-content: space-between;
   border: 1px solid #fff;
@@ -79,7 +79,7 @@ const StyledH3 = styled.h3`
     background-color: #af3277;
 
     font-size: 12px;
-    width: 100%;
+    /* width: 100%; */
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
   }
