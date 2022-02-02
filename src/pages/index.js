@@ -177,7 +177,6 @@ const IndexPage = () => (
               </StyledButton>
             </StyledParagraph>
           </StyledBox>
-          <StyledImageContainer>
             <StaticImage
               layout="constrained"
               src="../images/hero.jpg"
@@ -188,7 +187,6 @@ const IndexPage = () => (
               alt="A Gatsby astronaut"
               // style={{ borderRadius: `50%` }}
             />
-          </StyledImageContainer>
         </StyledAboutSection>
         <Gallery />
       </StyledDiv>
