@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Image from "../components/Image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -173,7 +174,7 @@ const about = () => {
   return (
     <Layout>
       <Seo title="About" />
-      <StyledLandingImage src="/slide2.jpg" />
+      <Image src="slide2.jpg" />
 
       <StyledContainer>
         <StyledH1>

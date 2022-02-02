@@ -4,6 +4,7 @@ import { navigate } from "gatsby"
 import Carousel from "nuka-carousel"
 import Layout from "../components/layout"
 import { motion } from "framer-motion"
+import { StaticImage } from "gatsby-plugin-image"
 import Seo from "../components/seo"
 import Gallery from "../components/Gallery"
 import Service from "../components/Service"
@@ -57,6 +58,10 @@ const StyledBox = styled.section`
   @media screen and (max-width: 568px) {
     /* flex-direction: column; */
   }
+`
+
+const StyledImageContainer = styled.div`
+/* margin-left: 3rem; */
 `
 
 
@@ -154,8 +159,9 @@ const IndexPage = () => (
             >
               <StyledH5>WHY OUR CHURCH</StyledH5>
               <StyledH1>
-                We are a church that believes in Jesus, a church that loves God
-                and people
+                We are a church that
+                <br /> believes in Jesus, a church <br /> that loves God and
+                people
               </StyledH1>
               <StyledP>
                 Sovereign Grace Tabernacle is a full Gospel believing Church, we
@@ -171,7 +177,18 @@ const IndexPage = () => (
               </StyledButton>
             </StyledParagraph>
           </StyledBox>
-          <Image src="slide1.jpg" alt="firstSlide" />
+          <StyledImageContainer>
+            <StaticImage
+              layout="constrained"
+              src="../images/hero.jpg"
+              width={1000}
+              height={1000}
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+              alt="A Gatsby astronaut"
+              // style={{ borderRadius: `50%` }}
+            />
+          </StyledImageContainer>
         </StyledAboutSection>
         <Gallery />
       </StyledDiv>

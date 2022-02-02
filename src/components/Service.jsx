@@ -2,13 +2,27 @@ import React from "react"
 import styled from "styled-components"
 import Details from "./Details"
 import { data } from "../../data"
+import { StaticImage } from "gatsby-plugin-image"
+
 
 const StyledServiceSection = styled.div`
-  background-image: url("/background.jpg");
-  background-size: cover;
+  /* background-image: url("/background.jpg"); */
+  /* background-size: cover; */
   color: #fff;
   padding-top: 5rem;
   padding-bottom: 8rem;
+  background: #cc2b5e; 
+  background: -webkit-linear-gradient(
+    to right,
+    #753a88,
+    #cc2b5e
+  );
+  background: linear-gradient(
+    to right,
+    #753a88,
+    #cc2b5e
+  ); 
+
   @media (max-width: 768px) {
   }
   @media screen and (max-width: 568px) {
@@ -16,6 +30,11 @@ const StyledServiceSection = styled.div`
     padding-top: 1rem;
     padding-bottom: 2rem;
   }
+`
+
+const StyledContent = styled.div`
+width: 100%;
+height: 5rem;
 `
 
 const Underline = styled.div`
@@ -44,13 +63,14 @@ const StyledH5 = styled.h5`
 `
 
 const StyledHeading = styled.section`
+  z-index: 10;
+
   display: flex;
   margin-left: 10rem;
   margin-right: 10rem;
   @media (max-width: 768px) {
-      margin-left: 1.2rem;
-      margin-right: 0;
-
+    margin-left: 1.2rem;
+    margin-right: 0;
   }
   @media screen and (max-width: 568px) {
     margin-left: 1rem;
@@ -61,15 +81,16 @@ const StyledHeading = styled.section`
 const Service = () => {
   return (
     <StyledServiceSection
-      data-sal="slide-up"
-      data-sal-duration="1500" 
-      // data-sal-delay="0" 
-    // data-sal-easing="ease"
+      // data-sal="slide-up"
+      // data-sal-duration="1500"
+      // data-sal-delay="0"
+      // data-sal-easing="ease"
     >
       <StyledHeading>
         <Underline />
         <StyledH5>OUR SERVICES</StyledH5>
       </StyledHeading>
+      {/* <StaticImage alt="" src="../images/background.jpg" /> */}
       {data.map(x => (
         <Details {...x} />
       ))}

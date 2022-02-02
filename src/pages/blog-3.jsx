@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import styled from "styled-components"
+import Image from "../components/Image"
 
 const StyledContainer = styled.div`
   font-family: "Open Sans";
@@ -96,7 +97,7 @@ const thirdBlog = () => {
     <Layout>
       <Seo title="The bride of Christ in these last days:" />
       <StyledContainer>
-        <StyledLandingImage src="/blog4.jpg" />
+        <Image src="blog4.jpg" />
         <StyledHeader>
           <StyledH1>Lorem ipsum dolor sit amet consectetur</StyledH1>
           <StyledH5>January 12, 2022</StyledH5>

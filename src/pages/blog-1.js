@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import styled from "styled-components"
+import Image from "../components/Image"
 
 const StyledContainer = styled.div`
   font-family: "Open Sans";
@@ -96,7 +97,7 @@ const secondBlog = () => {
     <Layout>
       <Seo title="How can one identify the true Church of God today" />
       <StyledContainer>
-        <StyledLandingImage src="/blog3.jpg" />
+        <Image src="blog3.jpg" />
         <StyledHeader>
           <StyledH1>
             How can one identify the true Church of God today?

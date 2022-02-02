@@ -18,25 +18,20 @@ const StyledFooter = styled.section`
   padding-top: 5rem;
   padding-bottom: 2rem;
   color: #fff;
-  background-blend-mode: multiply;
-  background-image: radial-gradient(
-      circle at top left,
-      #ce40c4 25%,
-      #c52465 90%
-    ),
-    url("/Footerbackground.jpg");
+  background: #cc2b5e;
+  background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);
+  background: linear-gradient(to right, #753a88, #cc2b5e);
   @media (max-width: 768px) {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-}
+  }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-      padding-left: 1rem;
-      padding-right: 1rem;
-      padding-top: 2rem;
-
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
   }
 
   @media screen and (max-width: 568px) {
@@ -97,7 +92,7 @@ const StyledIcon = styled.section`
   cursor: pointer;
   font-size: 18px;
   border-radius: 50%;
-  background: #fc4ef0;
+  background: inherit;
   transition: all 0.5s ease;
 
   :hover {

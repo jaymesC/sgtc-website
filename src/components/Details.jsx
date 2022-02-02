@@ -9,6 +9,7 @@ const StyledArea = styled.div`
   margin-left: 10rem;
   margin-right: 10rem;
   display: flex;
+  z-index:99;
   /* width: 100vw; */
   @media (max-width: 768px) {
     margin-left: 1rem;
@@ -39,9 +40,10 @@ const StyledArea = styled.div`
 //   }
 // `
 const StyledDate = styled.section`
+z-index: 9;
   display: flex;
   justify-content: space-between;
-  border: 1px solid white;
+  border: 1px solid #fff;
   margin-left: 0.3rem;
   width: 100vw;
   margin-left: 3rem;
