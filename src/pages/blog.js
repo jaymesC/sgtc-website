@@ -60,6 +60,7 @@ const StyledH1 = styled.h1`
 `
 const StyledP = styled.p`
   font-size: 18px;
+  padding-top: 1rem;
   @media screen and (max-width: 568px) {
       font-size: 14px;
 

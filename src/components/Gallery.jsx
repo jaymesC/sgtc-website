@@ -20,6 +20,7 @@ const StyledH5 = styled.h5`
   margin-bottom: 2.5rem;
   @media screen and (max-width: 568px) {
     margin-bottom: 1rem;
+    font-size: 10px;
   }
 `
 

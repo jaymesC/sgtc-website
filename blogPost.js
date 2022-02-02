@@ -3,7 +3,7 @@ export const blogPost = [
     src: "/blog3.jpg",
     title: " How can one identify the true Church of God today?",
     description:
-      "As a result of many churches on land today, you may find it difficult to identify which of the Churches around is the true gathering of God's children where a true worshipper ...",
+      "As a result of many churches on land today, you may find it difficult to identify which of the Churches around is the true gathering of God's children where ...",
     date: "December 18, 2021",
     page: "blog-1",
   },

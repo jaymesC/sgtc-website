@@ -37,6 +37,9 @@ const Underline = styled.div`
   @media (max-width: 768px) {
     /* width: 400px; */
   }
+    @media screen and (max-width: 568px) {
+      width: 40px;
+    }
 `
 
 const StyledH5 = styled.h5`
@@ -48,6 +51,7 @@ const StyledH5 = styled.h5`
 
   @media screen and (max-width: 568px) {
     margin-bottom: 1rem;
+    font-size: 10px;
   }
 `
 

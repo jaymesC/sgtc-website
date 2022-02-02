@@ -94,7 +94,7 @@ const StyledSignature = styled.p`
 const secondBlog = () => {
   return (
     <Layout>
-      <Seo title="The bride of Christ in these last days:" />
+      <Seo title="How can one identify the true Church of God today" />
       <StyledContainer>
         <StyledLandingImage src="/blog3.jpg" />
         <StyledHeader>

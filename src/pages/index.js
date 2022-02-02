@@ -78,25 +78,26 @@ const StyledH5 = styled.h5`
   color: #000;
   font-size: 15px;
   margin-bottom: 2.5rem;
-
+  
   @media (max-width: 768px) {
     margin-bottom: 1rem;
   }
-
+  
   @media screen and (max-width: 568px) {
+    font-size: 10px;
     margin-bottom: 1rem;
   }
 `
 const StyledH1 = styled.h1`
   line-height: 3.8rem;
-  color: #0f0f0f;
-  font-size: 3rem;
+  color: #af3277;
+  font-size: 2.8rem;
   @media (max-width: 768px) {
     font-size: 2rem;
     line-height: normal;
   }
   @media screen and (max-width: 568px) {
-    font-size: 1rem;
+    font-size: 20px;
     line-height: normal;
   }
 `
