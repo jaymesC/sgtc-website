@@ -44,7 +44,7 @@ z-index: 9;
   display: flex;
   justify-content: space-between;
   border: 1px solid #fff;
-  margin-left: 0.3rem;
+  /* margin-left: 0.3rem; */
   width: 100vw;
   margin-left: 3rem;
 
@@ -54,7 +54,7 @@ z-index: 9;
   @media screen and (max-width: 568px) {
     width: 100vw;
     flex-direction: column;
-    /* margin-left: 2rem; */
+    margin-left: 1rem;
     margin-right: 2rem;
   }
 `
