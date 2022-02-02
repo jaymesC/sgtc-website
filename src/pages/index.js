@@ -10,7 +10,6 @@ import Service from "../components/Service"
 import BlogSection from "../components/BlogSection"
 import Image from "../components/Image"
 
-
 const StyledAboutSection = styled.section`
   display: flex;
   @media (max-width: 768px) {
@@ -59,33 +58,17 @@ const StyledBox = styled.section`
     /* flex-direction: column; */
   }
 `
-const StyledImg = styled.img`
-  /* margin-top: 4rem; */
-  height: 30rem;
-  /* width: 40rem; */
-  margin-left: 3rem;
 
-  @media (max-width: 768px) {
-    margin-top: 1rem;
-    height: 25rem;
-  }
-  @media screen and (max-width: 568px) {
-    margin-top: 0;
-    margin-left: 0;
-    height: 16rem;
-    /* width:10rem; */
-  }
-`
 
 const StyledH5 = styled.h5`
   color: #000;
   font-size: 15px;
   margin-bottom: 2.5rem;
-  
+
   @media (max-width: 768px) {
     margin-bottom: 1rem;
   }
-  
+
   @media screen and (max-width: 568px) {
     font-size: 10px;
     margin-bottom: 1rem;
@@ -152,12 +135,7 @@ const IndexPage = () => (
         withoutControls={true}
         wrapAround={true}
       >
-        {/* <img src="/slide1.jpg" alt="" /> */}
-        <Image
-          src="slide1.jpg"
-          alt="firstSlide"
-
-        />
+        <Image src="slide1.jpg" alt="firstSlide" />
         <Image src="slide2.jpg" alt="secondslide" />
       </Carousel>
 
@@ -193,13 +171,7 @@ const IndexPage = () => (
               </StyledButton>
             </StyledParagraph>
           </StyledBox>
-          <StyledImg
-            layout="constrained"
-            src="/heroImage.jpg"
-            quality={95}
-            formats={["AUTO", "WEBP", "AVIF"]}
-            alt="About image"
-          />
+          <Image src="slide1.jpg" alt="firstSlide" />
         </StyledAboutSection>
         <Gallery />
       </StyledDiv>
@@ -210,5 +182,4 @@ const IndexPage = () => (
   </>
 )
 
-export default IndexPage;
-
+export default IndexPage

@@ -1,6 +1,7 @@
 import React from "react"
 import { navigate } from "gatsby"
 import styled from "styled-components"
+import Image from "./Image"
 
 const StyledCardContainer = styled.div`
   font-family: "Open Sans", Arial, sans-serif;
@@ -95,7 +96,7 @@ const BlogCard = ({ page, title, date, src, description }) => {
       data-sal-delay="100"
       data-sal-easing="ease"
     >
-      <StyledCardImage src={src} />
+      <Image src={src} />
       <StyledTitle>{title}</StyledTitle>
       <StyledDate>{date}</StyledDate>
       <StyledParagraph>{description}</StyledParagraph>
