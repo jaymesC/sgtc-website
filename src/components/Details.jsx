@@ -54,7 +54,7 @@ z-index: 9;
   @media screen and (max-width: 568px) {
     width: 100vw;
     flex-direction: column;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     margin-right: 2rem;
   }
 `
