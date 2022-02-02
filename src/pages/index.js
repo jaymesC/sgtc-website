@@ -9,6 +9,7 @@ import Gallery from "../components/Gallery"
 import Service from "../components/Service"
 import BlogSection from "../components/BlogSection"
 
+
 const StyledAboutSection = styled.section`
   display: flex;
   @media (max-width: 768px) {
