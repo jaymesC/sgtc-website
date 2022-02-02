@@ -180,8 +180,8 @@ const IndexPage = () => (
             <StaticImage
               layout="constrained"
               src="../images/hero.jpg"
-              width={1000}
-              height={1000}
+              width={300}
+              height={300}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
               alt="A Gatsby astronaut"
