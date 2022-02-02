@@ -52,10 +52,10 @@ z-index: 9;
       margin-left: 1rem;
   }
   @media screen and (max-width: 568px) {
-    width: 98vw;
+    width: 100vw;
     flex-direction: column;
-    margin-left: 1rem;
-    /* margin-right: 12rem; */
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 `
 
