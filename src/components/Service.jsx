@@ -6,6 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 
 const StyledServiceSection = styled.div`
+margin-top:5rem;
   /* background-image: url("/background.jpg"); */
   /* background-size: cover; */
   color: #fff;
@@ -26,7 +27,7 @@ const StyledServiceSection = styled.div`
   @media (max-width: 768px) {
   }
   @media screen and (max-width: 568px) {
-    margin-top: 0.5;
+    margin-top: 2rem;
     padding-top: 1rem;
     padding-bottom: 2rem;
   }
@@ -47,6 +48,7 @@ const Underline = styled.div`
   }
   @media screen and (max-width: 568px) {
     width: 40px;
+    height: 3px;
   }
 `
 
@@ -59,6 +61,7 @@ const StyledH5 = styled.h5`
 
   @media screen and (max-width: 568px) {
     margin-bottom: 1rem;
+    font-size: 10px;
   }
 `
 
@@ -81,8 +84,8 @@ const StyledHeading = styled.section`
 const Service = () => {
   return (
     <StyledServiceSection
-      // data-sal="slide-up"
-      // data-sal-duration="1500"
+      data-sal="slide-up"
+      data-sal-duration="1500"
       // data-sal-delay="0"
       // data-sal-easing="ease"
     >

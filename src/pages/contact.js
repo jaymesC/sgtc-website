@@ -9,7 +9,9 @@ import { init } from "@emailjs/browser"
 init("")
 
 const StyledFormContainer = styled.div`
-  background-color: #c93295;
+  background: #cc2b5e;
+  background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);
+  background: linear-gradient(to right, #753a88, #cc2b5e);
   margin-top: 2rem;
   margin-left: 10rem;
   margin-right: 10rem;

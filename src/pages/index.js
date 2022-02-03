@@ -191,7 +191,7 @@ const IndexPage = () => (
             />
           </StyledImageContainer>
         </StyledAboutSection>
-        <Gallery />
+        {/* <Gallery /> */}
       </StyledDiv>
 
       <Service />
