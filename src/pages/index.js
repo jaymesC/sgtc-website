@@ -61,7 +61,8 @@ const StyledBox = styled.section`
 `
 
 const StyledImageContainer = styled.div`
-/* margin-left: 3rem; */
+/* width:10rem;
+height:10rem; */
 `
 
 
@@ -177,16 +178,18 @@ const IndexPage = () => (
               </StyledButton>
             </StyledParagraph>
           </StyledBox>
+          <StyledImageContainer>
             <StaticImage
               layout="constrained"
               src="../images/hero.jpg"
-              width={300}
-              height={300}
+              width={1000}
+              height={1000}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
               alt="A Gatsby astronaut"
               // style={{ borderRadius: `50%` }}
             />
+          </StyledImageContainer>
         </StyledAboutSection>
         <Gallery />
       </StyledDiv>

@@ -79,7 +79,7 @@ const StyledH3 = styled.h3`
     background-color: #af3277;
 
     font-size: 12px;
-    /* width: 100%; */
+    width: 50%;
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
   }
