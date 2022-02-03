@@ -217,8 +217,9 @@ const TradeMark = styled.p`
   @media screen and (max-width: 568px) {
       width: 20rem;
       padding-top: 5rem;
+      margin-left: 2rem;
       font-size: 12px;
-      text-align: center;
+      /* text-align: center; */
   }
 `
 
