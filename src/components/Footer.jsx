@@ -218,6 +218,7 @@ const TradeMark = styled.p`
       width: 20rem;
       padding-top: 5rem;
       font-size: 12px;
+      text-align: center;
   }
 `
 
