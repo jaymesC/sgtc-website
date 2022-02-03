@@ -87,6 +87,7 @@ const StyledSignature = styled.p`
   }
 
   @media screen and (max-width: 568px) {
+    font-size:14px;
     margin-top: 1rem;
     padding-bottom: 2rem;
   }
