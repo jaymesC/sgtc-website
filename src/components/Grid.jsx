@@ -29,11 +29,6 @@ const photos = [
     width: 3,
     height: 2,
   },
-  //     {
-  //         src: "/pic7.jpeg",
-  //         width: 4,
-  //     height: 2,
-  //   },
 ]
 
 const StyledGrid = styled.section`

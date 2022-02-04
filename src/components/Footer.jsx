@@ -7,8 +7,8 @@ import { FaYoutube } from "react-icons/fa"
 import { FaPhoneAlt } from "react-icons/fa"
 import { FaEnvelope } from "react-icons/fa"
 import { FaMapMarkerAlt } from "react-icons/fa"
+import { FaLinkedinIn } from "react-icons/fa"
 import { Link } from "gatsby"
-
 
 const StyledFooter = styled.section`
   display: flex;
@@ -45,11 +45,10 @@ const StyledContainer = styled.div`
   justify-content: space-between;
   @media (max-width: 768px) {
     flex-direction: column;
-
   }
 
   @media screen and (max-width: 568px) {
-      flex-direction: column;
+    flex-direction: column;
   }
 `
 
@@ -59,18 +58,16 @@ const StyledH3 = styled.h3`
   }
 
   @media screen and (max-width: 568px) {
-      margin-top: 2rem;
+    margin-top: 2rem;
   }
 `
 
 const StyledAboutSection = styled.section`
   width: 20rem;
   @media (min-width: 768px) and (max-width: 1024px) {
-
-      margin-right: 2rem;
+    margin-right: 2rem;
   }
   @media (max-width: 768px) {
-
   }
 
   @media screen and (max-width: 568px) {
@@ -85,18 +82,21 @@ const StyledLinks = styled.section`
   @media screen and (max-width: 568px) {
   }
 `
-const StyledIcon = styled.section`
+const StyledIcon = styled.a`
   padding: 10px;
+  color: #fff;
   margin-right: 1rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   cursor: pointer;
-  font-size: 18px;
+  font-size: 22px;
   border-radius: 50%;
   background: inherit;
   transition: all 0.5s ease;
 
   :hover {
-    color: #ffd919;
+    color: #1e4297;
+    background: white;
+
     transition: all 0.5s ease;
   }
   @media (max-width: 768px) {
@@ -104,7 +104,110 @@ const StyledIcon = styled.section`
 
   @media screen and (max-width: 568px) {
     margin-top: 0;
-    font-size: 14px;
+    font-size: 18px;
+    padding: 5px;
+  }
+`
+const StyledIconA = styled.a`
+  padding: 10px;
+  color: #fff;
+  margin-right: 1rem;
+  /* margin-top: 1rem; */
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 50%;
+  background: inherit;
+  transition: all 0.5s ease;
+
+  :hover {
+    color: #fd8c63;
+    background: white;
+
+    transition: all 0.5s ease;
+  }
+  @media (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 568px) {
+    margin-top: 0;
+    font-size: 18px;
+    padding: 5px;
+  }
+`
+const StyledIconB = styled.a`
+  padding: 10px;
+  color: #fff;
+  margin-right: 1rem;
+  /* margin-top: 1rem; */
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 50%;
+  background: inherit;
+  transition: all 0.5s ease;
+
+  :hover {
+    color: #1da1f2;
+    background: white;
+    transition: all 0.5s ease;
+  }
+  @media (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 568px) {
+    margin-top: 0;
+    font-size: 18px;
+    padding: 5px;
+  }
+`
+
+const StyledIconC = styled.a`
+  padding: 10px;
+  color: #fff;
+  margin-right: 1rem;
+  /* margin-top: 1rem; */
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 50%;
+  background: inherit;
+  transition: all 0.5s ease;
+
+  :hover {
+    color: #ff0000;
+    transition: all 0.5s ease;
+    background: white;
+  }
+  @media (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 568px) {
+    margin-top: 0;
+    font-size: 18px;
+    padding: 5px;
+  }
+`
+const StyledIconD = styled.a`
+  padding: 10px;
+  color: #fff;
+  margin-right: 1rem;
+  /* margin-top: 1rem; */
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 50%;
+  background: inherit;
+  transition: all 0.5s ease;
+
+  :hover {
+    color: #2867b2;
+    background: white;
+
+    transition: all 0.5s ease;
+  }
+  @media (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 568px) {
+    margin-top: 0;
+    font-size: 18px;
     padding: 5px;
   }
 `
@@ -113,12 +216,12 @@ const StyledP = styled.p`
   margin-top: 2rem;
   margin-bottom: 2rem;
   @media (max-width: 768px) {
-}
+  }
 
-@media screen and (max-width: 568px) {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      font-size:14px;
+  @media screen and (max-width: 568px) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
   }
 `
 
@@ -157,20 +260,20 @@ const StyledFooterLink = styled(Link)`
 const StyledText = styled.p`
   margin-left: 1rem;
   @media (max-width: 768px) {
-}
+  }
 
-@media screen and (max-width: 568px) {
-      margin-left: 1rem;
-      font-size: 12px;
+  @media screen and (max-width: 568px) {
+    margin-left: 1rem;
+    font-size: 12px;
   }
 `
 
 const StyledFooterContact = styled.div`
   width: 25rem;
   @media (max-width: 768px) {
-}
+  }
 
-@media screen and (max-width: 568px) {
+  @media screen and (max-width: 568px) {
     width: 20rem;
     margin-right: 1rem;
   }
@@ -206,7 +309,7 @@ const StyledEmail = styled.div`
 
   @media screen and (max-width: 568px) {
   }
-  `
+`
 
 const TradeMark = styled.p`
   display: flex;
@@ -215,75 +318,94 @@ const TradeMark = styled.p`
   align-self: center;
   color: #fff;
   @media screen and (max-width: 568px) {
-      width: 20rem;
-      padding-top: 5rem;
-      margin-left: 3rem;
-      font-size: 12px;
-      /* text-align: center; */
+    width: 20rem;
+    padding-top: 5rem;
+    margin-left: 3rem;
+    font-size: 12px;
+    /* text-align: center; */
   }
 `
 
-
 const Footer = () => {
-    return (
-      <>
-        <StyledFooter>
-          <StyledContainer>
-            <StyledAboutSection>
-              <StyledH3>ABOUT SOVEREIGN GRACE TABERNACLE</StyledH3>
-              <StyledP>
-                Sovereign Grace Tabernacle is a full Gospel believing Church, we
-                believe in the message of "THIS HOUR" that will prepare the
-                bride of Christ for the second coming of Jesus Christ.
-              </StyledP>
-              <StyledLinks>
-                <StyledIcon>
-                  <FaFacebookF />
-                </StyledIcon>
-                <StyledIcon>
-                  <FaInstagram />
-                </StyledIcon>
-                <StyledIcon>
-                  <FaTwitter />
-                </StyledIcon>
-                <StyledIcon>
-                  <FaYoutube />
-                </StyledIcon>
-              </StyledLinks>
-            </StyledAboutSection>
-            <StyledQuickLinks>
-              <StyledH3>QUICK LINKS</StyledH3>
-              <StyledFooterLink to="/">Home</StyledFooterLink>
-              <StyledFooterLink to="/about">About</StyledFooterLink>
-              <StyledFooterLink to="/blog">Blog</StyledFooterLink>
-              <StyledFooterLink to="/contact">Contact</StyledFooterLink>
-            </StyledQuickLinks>
-            <StyledFooterContact>
-              <StyledH3>HAVE A QUESTION?</StyledH3>
-              <StyledLocation>
-                <FaMapMarkerAlt />
-                <StyledText>
-                  No. 1b Tony Close Off Okilton Drive, Off Ada George Road, Port
-                  Harcourt.
-                </StyledText>
-              </StyledLocation>
-              <StyledNumber>
-                <FaPhoneAlt />
-                <StyledText>+2349075417094</StyledText>
-              </StyledNumber>
-              <StyledEmail>
-                <FaEnvelope />
-                <StyledText>sovereigngracetabernacle1@gmail.com</StyledText>
-              </StyledEmail>
-            </StyledFooterContact>
-          </StyledContainer>
-          <TradeMark>
-            {" "}
-            Copyright ©{new Date().getFullYear()} Sovereign Grace Tabernacle 
-          </TradeMark>
-        </StyledFooter>
-      </>
-    )
+  return (
+    <>
+      <StyledFooter>
+        <StyledContainer>
+          <StyledAboutSection>
+            <StyledH3>ABOUT SOVEREIGN GRACE TABERNACLE</StyledH3>
+            <StyledP>
+              Sovereign Grace Tabernacle is a full Gospel believing Church, we
+              believe in the message of "THIS HOUR" that will prepare the bride
+              of Christ for the second coming of Jesus Christ.
+            </StyledP>
+
+            <StyledLinks>
+              <StyledIcon href="/" target="_blank" rel="noreferrer">
+                <FaFacebookF />
+              </StyledIcon>
+              <StyledIconA
+                href="https://www.instagram.com/sovereigngracetabernacle/?hl=en"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaInstagram />
+              </StyledIconA>
+              <StyledIconB
+                href="https://twitter.com/SovereignGraceT"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaTwitter />
+              </StyledIconB>
+              <StyledIconC
+                href="https://www.youtube.com/channel/UChb-Qtqhn5PwNi2f7d4h68g"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaYoutube />
+              </StyledIconC>
+              <StyledIconD
+                href="https://www.linkedin.com/in/sovereign-grace-tabernacle-37b0a8222/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedinIn />
+              </StyledIconD>
+            </StyledLinks>
+          </StyledAboutSection>
+          <StyledQuickLinks>
+            <StyledH3>QUICK LINKS</StyledH3>
+            <StyledFooterLink to="/">Home</StyledFooterLink>
+            <StyledFooterLink to="/about">About</StyledFooterLink>
+            <StyledFooterLink to="/blog">Blog</StyledFooterLink>
+            <StyledFooterLink to="/contact">Contact</StyledFooterLink>
+          </StyledQuickLinks>
+          <StyledFooterContact>
+            <StyledH3>HAVE A QUESTION?</StyledH3>
+            <StyledLocation>
+              <FaMapMarkerAlt />
+              <StyledText>
+                No. 1b Tony Close Off Okilton Drive, Off Ada George Road, Port
+                Harcourt.
+              </StyledText>
+            </StyledLocation>
+            <StyledNumber>
+              <FaPhoneAlt />
+              <StyledText>+2349075417094</StyledText>
+            </StyledNumber>
+            <StyledEmail>
+              <FaEnvelope />
+              <StyledText>sovereigngracetabernacle1@gmail.com</StyledText>
+            </StyledEmail>
+          </StyledFooterContact>
+        </StyledContainer>
+        <TradeMark>
+          {" "}
+          Copyright ©{new Date().getFullYear()} Sovereign Grace Tabernacle
+        </TradeMark>
+      </StyledFooter>
+    </>
+  )
 }
 
 export default Footer
