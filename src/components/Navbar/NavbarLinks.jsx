@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { FaFacebookF } from "react-icons/fa"
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
 import { FaTwitter } from "react-icons/fa"
 import { FaYoutube } from "react-icons/fa"
@@ -13,7 +13,7 @@ const NavIcon = styled(Link)`
   font-size: 1.5rem;
   display: none;
   @media (max-width: 768px) {
-   display: block;
+    display: block;
   }
 `
 
@@ -50,6 +50,12 @@ const NavItem = styled(Link)`
     z-index: 6;
   }
 `
+
+const StyledIcon = styled.a`
+  color: #af3277;
+  margin-right: 10px;
+`
+
 const NavbarLinks = () => {
   return (
     <>
@@ -59,10 +65,37 @@ const NavbarLinks = () => {
       <NavItem to="/contact">Contact</NavItem>
 
       <NavIcon>
-        <FaFacebookF style={{ marginRight: "20px" }} />
-        <FaInstagram style={{ marginRight: "20px" }} />
-        <FaTwitter style={{ marginRight: "20px" }} />
-        <FaYoutube />
+        <StyledIcon href="/" target="_blank" rel="noreferrer">
+          <FaFacebookF />
+        </StyledIcon>
+        <StyledIcon
+          href="https://www.instagram.com/sovereigngracetabernacle/?hl=en"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaInstagram />
+        </StyledIcon>
+        <StyledIcon
+          href="https://twitter.com/SovereignGraceT"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaTwitter />
+        </StyledIcon>
+        <StyledIcon
+          href="https://www.youtube.com/channel/UChb-Qtqhn5PwNi2f7d4h68g"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaYoutube />
+        </StyledIcon>
+        <StyledIcon
+          href="https://www.linkedin.com/in/sovereign-grace-tabernacle-37b0a8222/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaLinkedinIn />
+        </StyledIcon>
       </NavIcon>
     </>
   )
