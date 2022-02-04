@@ -4,7 +4,6 @@ import styled from "styled-components"
 import Image from "./Image"
 
 const StyledCardContainer = styled.div`
-z-index:9;
   font-family: "Open Sans", Arial, sans-serif;
   margin-left: 3rem;
   margin-bottom: 1rem;
@@ -44,6 +43,7 @@ const StyledCardImage = styled.img`
 const StyledTitle = styled.h4`
   color: #333;
   font-weight: 500;
+  padding-top:1rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
