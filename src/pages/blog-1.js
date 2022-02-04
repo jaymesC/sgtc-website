@@ -50,16 +50,9 @@ const StyledH5 = styled.h5`
     font-size: 12px;
   }
 `
-const StyledLandingImage = styled.img`
-  height: 80vh;
-  width: 100%;
-  @media screen and (max-width: 568px) {
-    height: 40vh;
-  }
-`
+
 
 const StyledP = styled.p`
-  /* font-style: italic; */
   margin-top: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;

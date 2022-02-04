@@ -24,7 +24,6 @@ const StyledFormContainer = styled.div`
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-    /* margin-bottom: 1rem; */
   }
 `
 
@@ -42,7 +41,6 @@ const StyledForm = styled.form`
     padding-left: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    /* margin-bottom: 1rem; */
   }
 `
 
@@ -109,12 +107,10 @@ const StyledInputContainer = styled.div`
   }
 `
 
-
 const StyledTextArea = styled.textarea`
   padding-left: 10px;
   font-size: 16px;
   height: 8rem;
-  /* width: 25rem; */
   border: 2px solid #af3277;
   margin-bottom: 1rem;
 
@@ -151,23 +147,21 @@ const StyledButton = styled.button`
 `
 
 const StyledMap = styled.div`
-margin-left: 10rem;
-margin-right: 10rem;
-margin-bottom:2rem;
-@media (max-width: 768px) {
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom:1rem;
-}
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 2rem;
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
 
-@media screen and (max-width: 568px) {
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom:1rem;
-
+  @media screen and (max-width: 568px) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
   }
 `
-
 
 const Contact = () => {
   const form = useRef()
@@ -192,18 +186,14 @@ const Contact = () => {
         <StyledH2>Let's get in touch</StyledH2>
         <StyledForm ref={form} onSubmit={sendEmail}>
           <StyledInputContainer>
-            {/* <StyledLabel>Name:</StyledLabel> */}
             <StyledInput type="text" name="user_name" placeholder="Name:" />
-            {/* <StyledLabel>Email:</StyledLabel> */}
             <StyledInput type="email" name="user_email" placeholder="Email:" />
           </StyledInputContainer>
-          {/* <StyledLabel>Subject:</StyledLabel> */}
           <StyledInputSubject
             type="text"
             name="subject"
             placeholder="Subject:"
           />
-          {/* <StyledLabel>Message:</StyledLabel> */}
           <StyledTextArea name="message" placeholder="Message:" />
           <StyledButton type="submit" value="Send">
             <RiSendPlaneFill style={{ marginRight: "1rem" }} />
@@ -216,7 +206,7 @@ const Contact = () => {
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7951.186807295564!2d6.97961091899944!3d4.839662237984157!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069ce3ed550e20b%3A0xfb667a0faf68c7c0!2s1%20Tony%20Close%2C%20Rumuochita%20500272%2C%20Port%20Harcourt!5e0!3m2!1sen!2sng!4v1643761034836!5m2!1sen!2sng"
           width="100%"
           height="450"
-          style={{border:0}}
+          style={{ border: 0 }}
           allowfullscreen=""
           loading="lazy"
           title="map"
