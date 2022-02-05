@@ -41,9 +41,9 @@ const StyledCardImage = styled.img`
 `
 
 const StyledTitle = styled.h4`
-  color: #333;
+  color: #af3277;
   font-weight: 500;
-  padding-top:1rem;
+  padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
