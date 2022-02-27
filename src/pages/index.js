@@ -202,9 +202,15 @@ const IndexPage = () => (
         </StyledAboutSection>
         {/* <Gallery /> */}
         <StyledVideoContainer>
-          <video width="100%" controls>
-            <source src="/test.mp4" type="video/mp4" />
-          </video>
+          <iframe
+            width="100%"
+            height="544"
+            src="https://www.youtube.com/embed/-dWS7Kzx0rQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </StyledVideoContainer>
       </StyledDiv>
 
