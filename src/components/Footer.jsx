@@ -340,14 +340,14 @@ const Footer = () => {
             </StyledP>
 
             <StyledLinks>
-              <StyledIcon href="/" target="_blank" rel="noreferrer">
-                <FaFacebookF />
-              </StyledIcon>
-              <StyledIconA
-                href="https://www.instagram.com/sovereigngracetabernacle/?hl=en"
+              <StyledIcon
+                href="https://www.facebook.com/SovereignGrace_Tabernacle-103411068778256/"
                 target="_blank"
                 rel="noreferrer"
               >
+                <FaFacebookF />
+              </StyledIcon>
+              <StyledIconA href="" target="_blank" rel="noreferrer">
                 <FaInstagram />
               </StyledIconA>
               <StyledIconB

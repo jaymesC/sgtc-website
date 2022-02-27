@@ -28,14 +28,6 @@ const StyledContainer = styled.div`
   }
 `
 
-const StyledLandingImage = styled.img`
-  height: 100%;
-  width: 100%;
-  @media screen and (max-width: 568px) {
-    height: 30vh;
-  }
-`
-
 const StyledH1 = styled.h1`
   margin-bottom: 2rem;
   @media (max-width: 768px) {

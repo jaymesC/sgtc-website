@@ -53,7 +53,7 @@ const NavItem = styled(Link)`
 
 const StyledIcon = styled.a`
   color: #af3277;
-  margin-right: 10px;
+  margin-right: 20px;
 `
 
 const NavbarLinks = () => {

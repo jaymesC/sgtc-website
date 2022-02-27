@@ -10,13 +10,17 @@ import Gallery from "../components/Gallery"
 import Service from "../components/Service"
 import BlogSection from "../components/BlogSection"
 import Image from "../components/Image"
+import { Container, Row, } from "react-bootstrap"
 
 const StyledAboutSection = styled.section`
   display: flex;
+  margin-bottom: 5rem;
   @media (max-width: 768px) {
     flex-direction: column;
+    margin-bottom: 0;
   }
   @media screen and (max-width: 568px) {
+    margin-bottom: 0;
     flex-direction: column;
   }
 `
@@ -61,10 +65,9 @@ const StyledBox = styled.section`
 `
 
 const StyledImageContainer = styled.div`
-/* width:10rem;
+  /* width:10rem;
 height:10rem; */
 `
-
 
 const StyledH5 = styled.h5`
   color: #000;
@@ -80,6 +83,12 @@ const StyledH5 = styled.h5`
     margin-bottom: 1rem;
   }
 `
+
+const StyledVideoContainer = styled.div`
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+`
+
 const StyledH1 = styled.h1`
   line-height: 3.8rem;
   color: #4e0056;
@@ -192,6 +201,11 @@ const IndexPage = () => (
           </StyledImageContainer>
         </StyledAboutSection>
         {/* <Gallery /> */}
+        <StyledVideoContainer>
+          <video width="100%" controls>
+            <source src="/test.mp4" type="video/mp4" />
+          </video>
+        </StyledVideoContainer>
       </StyledDiv>
 
       <Service />
