@@ -86,7 +86,12 @@ const StyledH5 = styled.h5`
 
 const StyledVideoContainer = styled.div`
   margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 2rem;
+  /* padding-left: 10rem; */
+  /* height: 200px; */
 `
 
 const StyledH1 = styled.h1`
@@ -203,13 +208,11 @@ const IndexPage = () => (
         {/* <Gallery /> */}
         <StyledVideoContainer>
           <iframe
+            src="https://drive.google.com/file/d/1BfGlVkAquPD947L-M3yYWz-VrcmtbB_a/preview"
             width="100%"
-            height="544"
-            src="https://www.youtube.com/embed/-dWS7Kzx0rQ"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            // height="480"
+            allow="autoplay"
+            className="video__frame"
           ></iframe>
         </StyledVideoContainer>
       </StyledDiv>
