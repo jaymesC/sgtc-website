@@ -13,13 +13,16 @@ body {
   font-family:"Open Sans", sans-serif;
 }
 
+
+
 .video__frame {
   height: 30rem;
   border: 5px solid #070707;
-
-    @media screen and (max-width: 568px) {
-    /* height: 3rem; */
-    /* width: 6rem; */
-    margin-bottom: 1rem;
-  }
 }
+
+@media screen and (max-width: 560px) {
+.video__frame {
+  height: 14rem;
+  border: 4px solid #070707;
+}
+  }
