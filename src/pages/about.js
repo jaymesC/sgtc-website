@@ -87,12 +87,16 @@ const StyledContent = styled.section`
 `
 
 const StyledBox = styled.section`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
   padding: 1rem;
-  width: 30rem;
-  height: 15rem;
+  width: 20rem;
+  height: 10rem;
   background-color: #af3277;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: all 0.5s ease;
 
   :hover {
@@ -111,11 +115,11 @@ const StyledBox = styled.section`
 `
 const StyledSecondBox = styled.section`
   padding: 1rem;
-  width: 30rem;
-  height: 15rem;
+  width: 20rem;
+  height: 10rem;
   background-color: #c93192;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: all 0.5s ease;
 
   :hover {
@@ -133,6 +137,7 @@ const StyledSecondBox = styled.section`
 `
 
 const StyledH2 = styled.h2`
+margin-bottom: 1rem;
   text-align: center;
   font-weight: 400;
   @media (max-width: 768px) {
@@ -198,19 +203,23 @@ const about = () => {
         <StyledSection
           data-sal="slide-up"
           data-sal-duration="1500"
-          // data-sal-delay="0"
-          // data-sal-easing="ease"
         >
           <StyledBox>
             <StyledH2>SUNDAYS:</StyledH2>
-            <StyledNote>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              omnis ducimus sequi asperiores consequatur nulla vero ex nostrum
-              vel corrupti.
+            <StyledNote>   
+              WORSHIP SERVICE <br /> 9:00AM <br />
             </StyledNote>
           </StyledBox>
           <StyledSecondBox>
             <StyledH2>WEDNESDAYS:</StyledH2>
+            <StyledNote>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              quod distinctio minima quos voluptas totam. Quod veniam quae
+              dolore atque?
+            </StyledNote>
+          </StyledSecondBox>
+          <StyledSecondBox>
+            <StyledH2>LAST FRIDAYS:</StyledH2>
             <StyledNote>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
               quod distinctio minima quos voluptas totam. Quod veniam quae
