@@ -74,8 +74,7 @@ const StyledSection = styled.section`
   @media (max-width: 768px) {
   }
   @media screen and (max-width: 568px) {
-    flex-direction:column;
-
+    flex-direction: column;
   }
 `
 const StyledContent = styled.section`
@@ -87,10 +86,10 @@ const StyledContent = styled.section`
 `
 
 const StyledBox = styled.section`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
   width: 20rem;
   height: 10rem;
@@ -114,6 +113,11 @@ justify-content: center;
   }
 `
 const StyledSecondBox = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
   padding: 1rem;
   width: 20rem;
   height: 10rem;
@@ -137,13 +141,13 @@ const StyledSecondBox = styled.section`
 `
 
 const StyledH2 = styled.h2`
-margin-bottom: 1rem;
+  margin-bottom: 1rem;
   text-align: center;
   font-weight: 400;
   @media (max-width: 768px) {
   }
   @media screen and (max-width: 568px) {
-    font-size:15px;
+    font-size: 15px;
   }
 `
 const StyledH3 = styled.h3`
@@ -156,15 +160,15 @@ const StyledH3 = styled.h3`
   @media screen and (max-width: 568px) {
     font-size: 20px;
   }
-  `
+`
 
 const StyledNote = styled.p`
-text-align: center;
-@media (max-width: 768px) {
-}
-@media screen and (max-width: 568px) {
-  font-size: 14px;
-}
+  text-align: center;
+  @media (max-width: 768px) {
+  }
+  @media screen and (max-width: 568px) {
+    font-size: 14px;
+  }
 `
 
 const about = () => {
@@ -200,30 +204,23 @@ const about = () => {
         <StyledH3>
           Our <StyledSpan>Service</StyledSpan> days:
         </StyledH3>
-        <StyledSection
-          data-sal="slide-up"
-          data-sal-duration="1500"
-        >
+        <StyledSection data-sal="slide-up" data-sal-duration="1500">
           <StyledBox>
             <StyledH2>SUNDAYS:</StyledH2>
-            <StyledNote>   
+            <StyledNote>
               WORSHIP SERVICE <br /> 9:00AM <br />
             </StyledNote>
           </StyledBox>
           <StyledSecondBox>
             <StyledH2>WEDNESDAYS:</StyledH2>
             <StyledNote>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              quod distinctio minima quos voluptas totam. Quod veniam quae
-              dolore atque?
+              MID-WEEK SERVICE <br /> 6:00 PM
             </StyledNote>
           </StyledSecondBox>
           <StyledSecondBox>
             <StyledH2>LAST FRIDAYS:</StyledH2>
             <StyledNote>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              quod distinctio minima quos voluptas totam. Quod veniam quae
-              dolore atque?
+              Of Every Month <br /> NIGHT VIGIL <br /> 10:00 PM
             </StyledNote>
           </StyledSecondBox>
         </StyledSection>
