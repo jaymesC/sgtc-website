@@ -72,6 +72,7 @@ const StyledSection = styled.section`
   display: flex;
   justify-content: space-around;
   @media (max-width: 768px) {
+    justify-content: space-between;
   }
   @media screen and (max-width: 568px) {
     flex-direction: column;
@@ -103,7 +104,7 @@ const StyledBox = styled.section`
     box-shadow: 5px 7px 9px -1px #908f8c;
   }
   @media (max-width: 768px) {
-    width: 20rem;
+    width: 15rem;
     height: 10rem;
   }
   @media screen and (max-width: 568px) {
@@ -131,11 +132,12 @@ const StyledSecondBox = styled.section`
     box-shadow: 5px 7px 9px -1px #908f8c;
   }
   @media (max-width: 768px) {
-    width: 20rem;
+    width: 15rem;
     height: 10rem;
   }
   @media screen and (max-width: 568px) {
     width: 20rem;
+    margin-bottom: 1rem;
     height: 8rem;
   }
 `
